@@ -1,0 +1,36 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid cadc933d-9f6d-4c85-8233-f32e26301f1e)
+
+  (paper "USLetter")
+
+  (title_block
+    (title "QuERI MPU")
+    (date "2024-03-28")
+    (rev "Draft")
+    (company "Noqsi Aerospace Ltd")
+    (comment 1 "15 Blanchard Avenue, Billerica MA 01821")
+    (comment 2 "jpd@noqsi.com")
+  )
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "BLUE" (shape input) (at 49.53 81.28 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 139533fa-0ce5-4521-8742-feeea039fadf)
+  )
+  (hierarchical_label "RED" (shape input) (at 49.53 45.72 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 1a19988b-0c10-4016-822b-8049abf662c6)
+  )
+  (hierarchical_label "GREEN" (shape input) (at 49.53 69.85 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 516e5792-4de8-4446-933b-f90e9aa4142d)
+  )
+  (hierarchical_label "YELLOW" (shape input) (at 49.53 58.42 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 675c8982-87f6-47c1-ae07-87afe3656ffe)
+  )
+)
