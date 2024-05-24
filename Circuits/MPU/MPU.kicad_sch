@@ -27317,12 +27317,6 @@
 		)
 	)
 	(junction
-		(at 128.27 163.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29058369-8313-4c56-a031-dd8a08c411f2")
-	)
-	(junction
 		(at 214.63 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -29519,16 +29513,6 @@
 			(type default)
 		)
 		(uuid "d6945b9d-9041-4602-8a89-23e269da1ff6")
-	)
-	(wire
-		(pts
-			(xy 128.27 163.83) (xy 134.62 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d824bbcc-4953-4ba3-a044-740efc207fdf")
 	)
 	(wire
 		(pts
@@ -38346,27 +38330,7 @@
 				(justify left top)
 			)
 		)
-		(pin "+3.3raw" input
-			(at 134.62 161.29 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "74840ec6-f83c-4473-ad40-8f1c9eb4a188")
-		)
-		(pin "+5raw" input
-			(at 134.62 163.83 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "a2459c87-b88c-4a52-a48f-27d686d5f180")
-		)
-		(pin "-5raw" input
+		(pin "+28return" input
 			(at 134.62 166.37 180)
 			(effects
 				(font
@@ -38374,7 +38338,17 @@
 				)
 				(justify left)
 			)
-			(uuid "597e3dc2-ce48-4e91-852f-76832d61d2b1")
+			(uuid "d7e7199b-4d4c-49e2-8f64-ac7dc2a59324")
+		)
+		(pin "+28V" input
+			(at 134.62 161.29 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f4b80513-1c40-4708-b922-3213957e4758")
 		)
 		(instances
 			(project "MPU"
