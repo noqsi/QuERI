@@ -882,7 +882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "105637f4-7345-47ec-a5ad-51e1c730e468")
-		(property "Reference" "#PWR0320"
+		(property "Reference" "#PWR0174"
 			(at 118.11 87.63 0)
 			(effects
 				(font
@@ -932,7 +932,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "#PWR0320")
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -948,7 +948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a6342d9-c989-4ccc-98e5-91de6c1b02dd")
-		(property "Reference" "R220"
+		(property "Reference" "R104"
 			(at 173.99 86.3599 0)
 			(effects
 				(font
@@ -1011,7 +1011,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "R220")
+					(reference "R104")
 					(unit 1)
 				)
 			)
@@ -1027,7 +1027,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2126cb4f-90b5-473e-a265-6eba79b949f6")
-		(property "Reference" "D26"
+		(property "Reference" "D18"
 			(at 175.26 95.5674 90)
 			(effects
 				(font
@@ -1054,7 +1054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
+		(property "Datasheet" "http://www.everlight.com/file/ProductFile/IR26-21C-L110-TR8.pdf"
 			(at 171.45 95.25 0)
 			(effects
 				(font
@@ -1063,7 +1063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "BLUE LED"
+		(property "Description" "940nm, 20 deg, Infrared LED, 1206"
 			(at 171.45 95.25 0)
 			(effects
 				(font
@@ -1081,7 +1081,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "D26")
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -1097,7 +1097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "281df4bf-1953-4ab7-a3d1-46e11d4c0ee3")
-		(property "Reference" "#PWR0316"
+		(property "Reference" "#PWR0172"
 			(at 118.11 44.45 0)
 			(effects
 				(font
@@ -1147,7 +1147,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "#PWR0316")
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -1239,7 +1239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "409b34ce-b681-455f-982d-5abe998393c3")
-		(property "Reference" "#PWR0319"
+		(property "Reference" "#PWR0177"
 			(at 171.45 72.39 0)
 			(effects
 				(font
@@ -1289,7 +1289,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "#PWR0319")
+					(reference "#PWR0177")
 					(unit 1)
 				)
 			)
@@ -1305,7 +1305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45597cd8-30b7-4c52-8bbb-43482ea8a67e")
-		(property "Reference" "#PWR0323"
+		(property "Reference" "#PWR0179"
 			(at 171.45 115.57 0)
 			(effects
 				(font
@@ -1355,7 +1355,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "#PWR0323")
+					(reference "#PWR0179")
 					(unit 1)
 				)
 			)
@@ -1371,7 +1371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48ddfa0a-4004-4f64-afa8-43b1af11049b")
-		(property "Reference" "Q10"
+		(property "Reference" "Q11"
 			(at 175.26 59.6899 0)
 			(effects
 				(font
@@ -1431,7 +1431,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "Q10")
+					(reference "Q11")
 					(unit 1)
 				)
 			)
@@ -1447,7 +1447,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a5dc336-685a-4a75-9432-252d32c6955f")
-		(property "Reference" "#PWR0322"
+		(property "Reference" "#PWR0178"
 			(at 171.45 87.63 0)
 			(effects
 				(font
@@ -1497,7 +1497,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "#PWR0322")
+					(reference "#PWR0178")
 					(unit 1)
 				)
 			)
@@ -1513,7 +1513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82a43168-4b10-41c6-9a43-6bcb866e5f68")
-		(property "Reference" "D25"
+		(property "Reference" "D16"
 			(at 121.92 95.5674 90)
 			(effects
 				(font
@@ -1540,7 +1540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
+		(property "Datasheet" "http://www.everlight.com/file/ProductFile/IR26-21C-L110-TR8.pdf"
 			(at 118.11 95.25 0)
 			(effects
 				(font
@@ -1549,7 +1549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "GREEN LED"
+		(property "Description" "940nm, 20 deg, Infrared LED, 1206"
 			(at 118.11 95.25 0)
 			(effects
 				(font
@@ -1567,7 +1567,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "D25")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -1583,7 +1583,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85726ae7-cfd6-46a9-ac37-110a65f401e5")
-		(property "Reference" "#PWR0317"
+		(property "Reference" "#PWR0173"
 			(at 118.11 72.39 0)
 			(effects
 				(font
@@ -1633,7 +1633,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "#PWR0317")
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -1649,7 +1649,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93c1aca5-d34f-4536-92fd-c0b97f750870")
-		(property "Reference" "#PWR0321"
+		(property "Reference" "#PWR0175"
 			(at 118.11 115.57 0)
 			(effects
 				(font
@@ -1699,7 +1699,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "#PWR0321")
+					(reference "#PWR0175")
 					(unit 1)
 				)
 			)
@@ -1715,7 +1715,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a14dfa1d-213c-4bcc-aef0-f96204ddfe22")
-		(property "Reference" "D23"
+		(property "Reference" "D15"
 			(at 121.92 52.3874 90)
 			(effects
 				(font
@@ -1742,7 +1742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
+		(property "Datasheet" "http://www.everlight.com/file/ProductFile/IR26-21C-L110-TR8.pdf"
 			(at 118.11 52.07 0)
 			(effects
 				(font
@@ -1751,7 +1751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RED LED"
+		(property "Description" "940nm, 20 deg, Infrared LED, 1206"
 			(at 118.11 52.07 0)
 			(effects
 				(font
@@ -1769,7 +1769,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "D23")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -1785,7 +1785,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ada9391f-e074-4101-b189-61a98132ac00")
-		(property "Reference" "R219"
+		(property "Reference" "R102"
 			(at 120.65 86.3599 0)
 			(effects
 				(font
@@ -1848,7 +1848,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "R219")
+					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -1864,7 +1864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b095d6af-feac-48e9-b79f-6c84d5561e6f")
-		(property "Reference" "#PWR0318"
+		(property "Reference" "#PWR0176"
 			(at 171.45 44.45 0)
 			(effects
 				(font
@@ -1914,7 +1914,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "#PWR0318")
+					(reference "#PWR0176")
 					(unit 1)
 				)
 			)
@@ -1930,7 +1930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9474169-f507-4c0a-8216-693934e51c35")
-		(property "Reference" "R218"
+		(property "Reference" "R103"
 			(at 173.99 43.1799 0)
 			(effects
 				(font
@@ -1993,7 +1993,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "R218")
+					(reference "R103")
 					(unit 1)
 				)
 			)
@@ -2009,7 +2009,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c444e1a2-f578-45e3-a4b2-5ba4844afaba")
-		(property "Reference" "D24"
+		(property "Reference" "D17"
 			(at 175.26 52.3874 90)
 			(effects
 				(font
@@ -2036,7 +2036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
+		(property "Datasheet" "http://www.everlight.com/file/ProductFile/IR26-21C-L110-TR8.pdf"
 			(at 171.45 52.07 0)
 			(effects
 				(font
@@ -2045,7 +2045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "YELLOW LED"
+		(property "Description" "940nm, 20 deg, Infrared LED, 1206"
 			(at 171.45 52.07 0)
 			(effects
 				(font
@@ -2063,7 +2063,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "D24")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -2155,7 +2155,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e07f0462-a5f3-47a6-8902-e5000e130f3f")
-		(property "Reference" "R217"
+		(property "Reference" "R101"
 			(at 120.65 43.1799 0)
 			(effects
 				(font
@@ -2218,7 +2218,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "R217")
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -2234,7 +2234,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f03aef6b-134c-4065-b537-edc36976d503")
-		(property "Reference" "Q11"
+		(property "Reference" "Q10"
 			(at 121.92 102.8699 0)
 			(effects
 				(font
@@ -2294,7 +2294,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/028dc115-76c0-407b-8cb2-dbe1c892e7d7"
-					(reference "Q11")
+					(reference "Q10")
 					(unit 1)
 				)
 			)

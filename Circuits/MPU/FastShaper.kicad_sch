@@ -21,7 +21,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR057"
+			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -30,8 +30,8 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "VHS"
-				(at 0 5.08 0)
+			(property "Value" "+2.5F"
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -116,7 +116,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0) hide
-					(name "VHS"
+					(name "+2.5F"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -970,9 +970,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1070,8 +1070,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1090,9 +1090,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1166,8 +1166,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1424,16 +1424,6 @@
 			(type default)
 		)
 		(uuid "1ad5f120-a7e6-470b-a6a1-783333c04679")
-	)
-	(wire
-		(pts
-			(xy 49.53 68.58) (xy 54.61 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b6527e8-fdff-49a8-a803-dd2c2918aeda")
 	)
 	(wire
 		(pts
@@ -1967,6 +1957,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 68.58) (xy 46.99 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3a9272d-de02-463d-a42b-f363045fcddd")
+	)
+	(wire
+		(pts
 			(xy 125.73 91.44) (xy 120.65 91.44)
 		)
 		(stroke
@@ -2025,18 +2025,6 @@
 		)
 		(uuid "fb528f91-621f-44fd-bfff-b3fe02c78078")
 	)
-	(hierarchical_label "IN"
-		(shape input)
-		(at 49.53 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a2947845-2d88-4e75-a95e-f5db88b38c41")
-	)
 	(hierarchical_label "UNIPOLAR"
 		(shape input)
 		(at 204.47 66.04 0)
@@ -2048,6 +2036,18 @@
 			(justify left)
 		)
 		(uuid "bf6e7fdb-4efc-470f-bea8-7628d0265abb")
+	)
+	(hierarchical_label "IN"
+		(shape input)
+		(at 41.91 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc4d30ea-0e27-4e87-89a5-576e92eb5daf")
 	)
 	(hierarchical_label "BIPOLAR"
 		(shape input)
@@ -2071,7 +2071,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "037d85e2-0c74-4bb5-b33b-df101dbc6308")
-		(property "Reference" "D3"
+		(property "Reference" "D20"
 			(at 69.85 72.39 0)
 			(effects
 				(font
@@ -2105,7 +2105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "General Purpose Switching Diode"
 			(at 69.85 78.74 0)
 			(effects
 				(font
@@ -2141,11 +2141,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "D3")
+					(reference "D20")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "D4")
+					(reference "D26")
 					(unit 1)
 				)
 			)
@@ -2161,7 +2161,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05c6807d-4b7b-48ed-b78f-982e99843b1e")
-		(property "Reference" "U6"
+		(property "Reference" "U20"
 			(at 85.09 55.88 0)
 			(effects
 				(font
@@ -2195,7 +2195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"
 			(at 85.09 66.04 0)
 			(effects
 				(font
@@ -2231,11 +2231,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U6")
+					(reference "U20")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U7")
+					(reference "U35")
 					(unit 1)
 				)
 			)
@@ -2251,7 +2251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06a99497-4e84-4faa-93f6-6a7f3b17857b")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR0191"
 			(at 132.08 154.94 0)
 			(effects
 				(font
@@ -2286,7 +2286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 132.08 148.59 0)
 			(effects
 				(font
@@ -2301,11 +2301,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR079")
+					(reference "#PWR0191")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR080")
+					(reference "#PWR0309")
 					(unit 1)
 				)
 			)
@@ -2321,7 +2321,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c95ce9d-61a8-4e96-945b-5fd08f96fe11")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR0180"
 			(at 52.07 82.55 0)
 			(effects
 				(font
@@ -2356,7 +2356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 52.07 78.74 0)
 			(effects
 				(font
@@ -2371,11 +2371,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR061")
+					(reference "#PWR0180")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR062")
+					(reference "#PWR0298")
 					(unit 1)
 				)
 			)
@@ -2391,7 +2391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12aedb54-bae9-4da8-b788-11c506769e18")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR0192"
 			(at 154.94 92.71 0)
 			(effects
 				(font
@@ -2426,7 +2426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2.5F\""
 			(at 154.94 88.9 0)
 			(effects
 				(font
@@ -2441,11 +2441,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR085")
+					(reference "#PWR0192")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR086")
+					(reference "#PWR0310")
 					(unit 1)
 				)
 			)
@@ -2461,7 +2461,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1649eed9-6d97-43a1-b62b-4a58da8dbbfb")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR0188"
 			(at 113.03 99.06 0)
 			(effects
 				(font
@@ -2496,7 +2496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 113.03 92.71 0)
 			(effects
 				(font
@@ -2511,11 +2511,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR071")
+					(reference "#PWR0188")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR072")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -2531,7 +2531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1758ca18-ab58-435c-ab7d-85f6c8ca0525")
-		(property "Reference" "R45"
+		(property "Reference" "R117"
 			(at 158.75 62.23 90)
 			(effects
 				(font
@@ -2565,7 +2565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 158.75 68.58 0)
 			(effects
 				(font
@@ -2592,11 +2592,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R45")
+					(reference "R117")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R46")
+					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -2612,7 +2612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19c44cd5-fda5-4047-b1d8-845cc95452d7")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR0194"
 			(at 194.31 138.43 0)
 			(effects
 				(font
@@ -2647,7 +2647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.31 132.08 0)
 			(effects
 				(font
@@ -2662,11 +2662,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR087")
+					(reference "#PWR0194")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR088")
+					(reference "#PWR0312")
 					(unit 1)
 				)
 			)
@@ -2682,7 +2682,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a3cd147-f122-430d-b854-7b3542d9e389")
-		(property "Reference" "U6"
+		(property "Reference" "U20"
 			(at 92.71 139.7 0)
 			(effects
 				(font
@@ -2718,7 +2718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"
 			(at 93.98 140.97 0)
 			(effects
 				(font
@@ -2754,11 +2754,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U6")
+					(reference "U20")
 					(unit 3)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U7")
+					(reference "U35")
 					(unit 3)
 				)
 			)
@@ -2774,7 +2774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b901a3a-fa19-45ad-9898-aee0c22ef9e6")
-		(property "Reference" "U8"
+		(property "Reference" "U21"
 			(at 133.35 139.7 0)
 			(effects
 				(font
@@ -2810,7 +2810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"
 			(at 134.62 140.97 0)
 			(effects
 				(font
@@ -2846,11 +2846,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U8")
+					(reference "U21")
 					(unit 3)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U9")
+					(reference "U36")
 					(unit 3)
 				)
 			)
@@ -2866,7 +2866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1eb0b535-6fe0-4c0a-be1c-a2efc9ea82d3")
-		(property "Reference" "R49"
+		(property "Reference" "R120"
 			(at 175.26 86.36 90)
 			(effects
 				(font
@@ -2900,7 +2900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 175.26 92.71 0)
 			(effects
 				(font
@@ -2927,11 +2927,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R49")
+					(reference "R120")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R50")
+					(reference "R207")
 					(unit 1)
 				)
 			)
@@ -2947,7 +2947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24b22638-362b-4878-bffd-4c6980fa7fcc")
-		(property "Reference" "C21"
+		(property "Reference" "C88"
 			(at 175.26 73.66 90)
 			(effects
 				(font
@@ -2981,7 +2981,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 175.26 81.28 0)
 			(effects
 				(font
@@ -3008,11 +3008,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C21")
+					(reference "C88")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C22")
+					(reference "C216")
 					(unit 1)
 				)
 			)
@@ -3028,7 +3028,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2dfaf6d4-75dc-4bbf-892e-c6aa4ff9690d")
-		(property "Reference" "R51"
+		(property "Reference" "R118"
 			(at 167.64 53.34 0)
 			(effects
 				(font
@@ -3064,7 +3064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 165.1 54.61 0)
 			(effects
 				(font
@@ -3091,11 +3091,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R51")
+					(reference "R118")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R52")
+					(reference "R205")
 					(unit 1)
 				)
 			)
@@ -3111,7 +3111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fb7e151-99ac-4632-aa37-0b386a31aa8e")
-		(property "Reference" "D1"
+		(property "Reference" "D19"
 			(at 59.69 72.39 0)
 			(effects
 				(font
@@ -3145,7 +3145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "General Purpose Switching Diode"
 			(at 59.69 78.74 0)
 			(effects
 				(font
@@ -3181,11 +3181,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "D1")
+					(reference "D19")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "D2")
+					(reference "D25")
 					(unit 1)
 				)
 			)
@@ -3201,7 +3201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "356ef6ce-0baa-4ff6-b883-38767f9c9b21")
-		(property "Reference" "C19"
+		(property "Reference" "C84"
 			(at 125.73 139.7 0)
 			(effects
 				(font
@@ -3237,7 +3237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 121.92 140.97 0)
 			(effects
 				(font
@@ -3264,11 +3264,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C19")
+					(reference "C84")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C20")
+					(reference "C212")
 					(unit 1)
 				)
 			)
@@ -3284,7 +3284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a36cf09-cb41-4ec9-a789-00f94a524b7d")
-		(property "Reference" "R47"
+		(property "Reference" "R122"
 			(at 193.04 59.69 90)
 			(effects
 				(font
@@ -3318,7 +3318,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 193.04 66.04 0)
 			(effects
 				(font
@@ -3345,11 +3345,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R47")
+					(reference "R122")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R48")
+					(reference "R209")
 					(unit 1)
 				)
 			)
@@ -3365,7 +3365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fb02935-7f45-4fec-b956-71667d753743")
-		(property "Reference" "R37"
+		(property "Reference" "R111"
 			(at 116.84 59.69 90)
 			(effects
 				(font
@@ -3399,7 +3399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 116.84 66.04 0)
 			(effects
 				(font
@@ -3426,11 +3426,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R37")
+					(reference "R111")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R38")
+					(reference "R198")
 					(unit 1)
 				)
 			)
@@ -3446,7 +3446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43b9c609-200d-4bc5-8c76-20ddc6cc4f08")
-		(property "Reference" "U8"
+		(property "Reference" "U21"
 			(at 176.53 55.88 0)
 			(effects
 				(font
@@ -3480,7 +3480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"
 			(at 176.53 66.04 0)
 			(effects
 				(font
@@ -3516,11 +3516,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U8")
+					(reference "U21")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U9")
+					(reference "U36")
 					(unit 1)
 				)
 			)
@@ -3536,7 +3536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47b78602-057b-40dd-9472-0457006672d4")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR0185"
 			(at 81.28 151.13 0)
 			(effects
 				(font
@@ -3571,7 +3571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 81.28 144.78 0)
 			(effects
 				(font
@@ -3586,11 +3586,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR065")
+					(reference "#PWR0185")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR066")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -3606,7 +3606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ee6f2c5-6e1f-47d3-9a9d-c619f64ba460")
-		(property "Reference" "R35"
+		(property "Reference" "R108"
 			(at 77.47 127 90)
 			(effects
 				(font
@@ -3640,7 +3640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 77.47 133.35 0)
 			(effects
 				(font
@@ -3667,11 +3667,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R35")
+					(reference "R108")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R36")
+					(reference "R195")
 					(unit 1)
 				)
 			)
@@ -3687,7 +3687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54c2f571-1ec4-4dd2-b003-ada0105b3da3")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR0181"
 			(at 64.77 64.77 0)
 			(effects
 				(font
@@ -3722,7 +3722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 64.77 58.42 0)
 			(effects
 				(font
@@ -3737,11 +3737,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR069")
+					(reference "#PWR0181")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR070")
+					(reference "#PWR0299")
 					(unit 1)
 				)
 			)
@@ -3757,7 +3757,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55d8e916-21e1-49d7-9b1b-60018caf0f27")
-		(property "Reference" "C28"
+		(property "Reference" "C89"
 			(at 190.5 124.46 90)
 			(effects
 				(font
@@ -3791,7 +3791,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 190.5 132.08 0)
 			(effects
 				(font
@@ -3818,11 +3818,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C28")
+					(reference "C89")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C30")
+					(reference "C217")
 					(unit 1)
 				)
 			)
@@ -3838,7 +3838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58d54197-bdfa-41a3-a362-a262902c4159")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR0182"
 			(at 72.39 137.16 0)
 			(effects
 				(font
@@ -3873,7 +3873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 72.39 133.35 0)
 			(effects
 				(font
@@ -3888,11 +3888,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR063")
+					(reference "#PWR0182")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR064")
+					(reference "#PWR0300")
 					(unit 1)
 				)
 			)
@@ -3908,7 +3908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6027b7df-e05a-4e29-ac5c-a7fd61113495")
-		(property "Reference" "R58"
+		(property "Reference" "R121"
 			(at 182.88 99.06 90)
 			(effects
 				(font
@@ -3942,7 +3942,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 182.88 105.41 0)
 			(effects
 				(font
@@ -3969,11 +3969,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R58")
+					(reference "R121")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R60")
+					(reference "R208")
 					(unit 1)
 				)
 			)
@@ -3989,7 +3989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63aa11d5-f35a-419c-abb3-2a3ecd941436")
-		(property "Reference" "R55"
+		(property "Reference" "R116"
 			(at 157.48 92.71 0)
 			(effects
 				(font
@@ -4025,7 +4025,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 154.94 93.98 0)
 			(effects
 				(font
@@ -4052,11 +4052,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R55")
+					(reference "R116")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R56")
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -4072,7 +4072,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e988bc9-e0af-463a-84cc-42a47da2114f")
-		(property "Reference" "C27"
+		(property "Reference" "C87"
 			(at 165.1 113.03 90)
 			(effects
 				(font
@@ -4106,7 +4106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 165.1 120.65 0)
 			(effects
 				(font
@@ -4133,11 +4133,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C27")
+					(reference "C87")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C29")
+					(reference "C215")
 					(unit 1)
 				)
 			)
@@ -4153,7 +4153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70272783-439d-47d9-b77d-9d49e684704e")
-		(property "Reference" "R29"
+		(property "Reference" "R106"
 			(at 71.12 62.23 90)
 			(effects
 				(font
@@ -4187,7 +4187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 71.12 68.58 0)
 			(effects
 				(font
@@ -4214,11 +4214,92 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R29")
+					(reference "R106")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R30")
+					(reference "R193")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "QuERI_symbols:Rlowp")
+		(at 50.8 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7410c924-ab48-4279-8a56-909005246cf4")
+		(property "Reference" "R105"
+			(at 50.8 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 50.8 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 70.358 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 50.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Spec" "1% 1/10W"
+			(at 50.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fc90e1a8-aff2-4134-8141-6c2c97908a25")
+		)
+		(pin "1"
+			(uuid "a6408b8a-feac-43cc-97e1-ed75b748ba29")
+		)
+		(instances
+			(project "MPU"
+				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
+					(reference "R105")
+					(unit 1)
+				)
+				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
+					(reference "R192")
 					(unit 1)
 				)
 			)
@@ -4234,7 +4315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7420d161-dc9c-4ac0-a14a-c21c29892bab")
-		(property "Reference" "R31"
+		(property "Reference" "R109"
 			(at 81.28 86.36 90)
 			(effects
 				(font
@@ -4268,7 +4349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 81.28 92.71 0)
 			(effects
 				(font
@@ -4295,11 +4376,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R31")
+					(reference "R109")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R32")
+					(reference "R196")
 					(unit 1)
 				)
 			)
@@ -4315,7 +4396,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b398057-8745-4b29-ac88-23731d75f4f5")
-		(property "Reference" "C17"
+		(property "Reference" "C85"
 			(at 129.54 83.82 90)
 			(effects
 				(font
@@ -4349,7 +4430,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 129.54 91.44 0)
 			(effects
 				(font
@@ -4376,11 +4457,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C17")
+					(reference "C85")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C18")
+					(reference "C213")
 					(unit 1)
 				)
 			)
@@ -4396,7 +4477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ff6293a-22cb-4ac0-a48a-0d2c734c9c52")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR0189"
 			(at 113.03 137.16 0)
 			(effects
 				(font
@@ -4431,7 +4512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 113.03 133.35 0)
 			(effects
 				(font
@@ -4446,11 +4527,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR075")
+					(reference "#PWR0189")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR077")
+					(reference "#PWR0307")
 					(unit 1)
 				)
 			)
@@ -4466,7 +4547,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81f44ce0-3e51-44c1-9328-a1e150ece883")
-		(property "Reference" "U6"
+		(property "Reference" "U20"
 			(at 129.54 58.42 0)
 			(effects
 				(font
@@ -4500,7 +4581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"
 			(at 129.54 68.58 0)
 			(effects
 				(font
@@ -4536,11 +4617,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U6")
+					(reference "U20")
 					(unit 2)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U7")
+					(reference "U35")
 					(unit 2)
 				)
 			)
@@ -4556,7 +4637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82b47026-6651-478e-8d2e-0749d06581f7")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR0195"
 			(at 204.47 99.06 0)
 			(effects
 				(font
@@ -4591,7 +4672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 204.47 92.71 0)
 			(effects
 				(font
@@ -4606,11 +4687,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR083")
+					(reference "#PWR0195")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR084")
+					(reference "#PWR0313")
 					(unit 1)
 				)
 			)
@@ -4626,7 +4707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84e93887-7429-4046-afa1-a17c9c4d16b8")
-		(property "Reference" "R33"
+		(property "Reference" "R110"
 			(at 101.6 59.69 90)
 			(effects
 				(font
@@ -4660,7 +4741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 101.6 66.04 0)
 			(effects
 				(font
@@ -4687,11 +4768,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R33")
+					(reference "R110")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R34")
+					(reference "R197")
 					(unit 1)
 				)
 			)
@@ -4707,7 +4788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98b39e2d-7327-4296-90fb-2ec79e0f5477")
-		(property "Reference" "R41"
+		(property "Reference" "R114"
 			(at 129.54 73.66 90)
 			(effects
 				(font
@@ -4741,7 +4822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 129.54 80.01 0)
 			(effects
 				(font
@@ -4768,11 +4849,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R41")
+					(reference "R114")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R42")
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -4788,7 +4869,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99a7f51a-bc19-4a78-acff-006f72d38ab9")
-		(property "Reference" "R39"
+		(property "Reference" "R112"
 			(at 116.84 71.12 90)
 			(effects
 				(font
@@ -4822,7 +4903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 116.84 77.47 0)
 			(effects
 				(font
@@ -4849,11 +4930,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R39")
+					(reference "R112")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R40")
+					(reference "R199")
 					(unit 1)
 				)
 			)
@@ -4869,7 +4950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0a07771-adbb-4fa5-b35f-11d440815c00")
-		(property "Reference" "R57"
+		(property "Reference" "R119"
 			(at 165.1 125.73 90)
 			(effects
 				(font
@@ -4903,7 +4984,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 165.1 132.08 0)
 			(effects
 				(font
@@ -4930,11 +5011,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R57")
+					(reference "R119")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R59")
+					(reference "R206")
 					(unit 1)
 				)
 			)
@@ -4950,7 +5031,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab6061ef-99c6-4770-aa12-c592d6a5eebb")
-		(property "Reference" "R53"
+		(property "Reference" "R115"
 			(at 140.97 101.6 90)
 			(effects
 				(font
@@ -4984,7 +5065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 140.97 107.95 0)
 			(effects
 				(font
@@ -5011,11 +5092,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R53")
+					(reference "R115")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R54")
+					(reference "R202")
 					(unit 1)
 				)
 			)
@@ -5031,7 +5112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af2c787f-0ef4-4a4f-8c10-f6ee6e59a782")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR0187"
 			(at 111.76 81.28 0)
 			(effects
 				(font
@@ -5066,7 +5147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2.5F\""
 			(at 111.76 77.47 0)
 			(effects
 				(font
@@ -5081,11 +5162,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR073")
+					(reference "#PWR0187")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR074")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -5101,7 +5182,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b409619a-170b-492d-9ea7-132d23f8c8b6")
-		(property "Reference" "C11"
+		(property "Reference" "C80"
 			(at 68.58 53.34 0)
 			(effects
 				(font
@@ -5137,7 +5218,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 64.77 54.61 0)
 			(effects
 				(font
@@ -5164,11 +5245,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C11")
+					(reference "C80")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C12")
+					(reference "C208")
 					(unit 1)
 				)
 			)
@@ -5184,7 +5265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf6595fd-6272-4a04-9897-6b68d4c7d334")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR0190"
 			(at 121.92 151.13 0)
 			(effects
 				(font
@@ -5219,7 +5300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 121.92 144.78 0)
 			(effects
 				(font
@@ -5234,11 +5315,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR076")
+					(reference "#PWR0190")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR078")
+					(reference "#PWR0308")
 					(unit 1)
 				)
 			)
@@ -5254,7 +5335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c92476f7-0b6f-4e9a-81a9-469bc69183a2")
-		(property "Reference" "C23"
+		(property "Reference" "C90"
 			(at 200.66 85.09 90)
 			(effects
 				(font
@@ -5288,7 +5369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 200.66 92.71 0)
 			(effects
 				(font
@@ -5315,11 +5396,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C23")
+					(reference "C90")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C24")
+					(reference "C218")
 					(unit 1)
 				)
 			)
@@ -5335,7 +5416,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0d98526-3e36-4d26-a506-306eef60c54a")
-		(property "Reference" "C25"
+		(property "Reference" "C86"
 			(at 149.86 100.33 90)
 			(effects
 				(font
@@ -5369,7 +5450,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 149.86 107.95 0)
 			(effects
 				(font
@@ -5396,11 +5477,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C25")
+					(reference "C86")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C26")
+					(reference "C214")
 					(unit 1)
 				)
 			)
@@ -5416,7 +5497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d11c54ff-df86-4878-95ca-7b397681f87c")
-		(property "Reference" "U8"
+		(property "Reference" "U21"
 			(at 166.37 95.25 0)
 			(effects
 				(font
@@ -5450,7 +5531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"
 			(at 166.37 105.41 0)
 			(effects
 				(font
@@ -5486,11 +5567,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U8")
+					(reference "U21")
 					(unit 2)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "U9")
+					(reference "U36")
 					(unit 2)
 				)
 			)
@@ -5506,7 +5587,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2dbe3ac-f6f0-4117-85aa-070b7c0acf14")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR0183"
 			(at 73.66 85.09 0)
 			(effects
 				(font
@@ -5541,7 +5622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 73.66 78.74 0)
 			(effects
 				(font
@@ -5556,11 +5637,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR059")
+					(reference "#PWR0183")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR060")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -5576,7 +5657,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d94b4f37-c1b9-4505-bc6e-5375cd91dc80")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR0193"
 			(at 165.1 53.34 0)
 			(effects
 				(font
@@ -5611,7 +5692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2.5F\""
 			(at 165.1 49.53 0)
 			(effects
 				(font
@@ -5626,11 +5707,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR081")
+					(reference "#PWR0193")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR082")
+					(reference "#PWR0311")
 					(unit 1)
 				)
 			)
@@ -5646,7 +5727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddb74f1b-91f1-42ce-8f46-01a9e80483bc")
-		(property "Reference" "R27"
+		(property "Reference" "R107"
 			(at 77.47 53.34 0)
 			(effects
 				(font
@@ -5682,7 +5763,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 74.93 54.61 0)
 			(effects
 				(font
@@ -5709,11 +5790,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R27")
+					(reference "R107")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R28")
+					(reference "R194")
 					(unit 1)
 				)
 			)
@@ -5729,7 +5810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e27918bb-b357-4140-b886-35d3c5012b62")
-		(property "Reference" "C15"
+		(property "Reference" "C83"
 			(at 109.22 85.09 90)
 			(effects
 				(font
@@ -5763,7 +5844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 109.22 92.71 0)
 			(effects
 				(font
@@ -5790,11 +5871,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C15")
+					(reference "C83")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C16")
+					(reference "C211")
 					(unit 1)
 				)
 			)
@@ -5810,7 +5891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e679ddae-0aab-484b-b5de-0aa16959db23")
-		(property "Reference" "R43"
+		(property "Reference" "R113"
 			(at 118.11 127 90)
 			(effects
 				(font
@@ -5844,7 +5925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 118.11 133.35 0)
 			(effects
 				(font
@@ -5871,11 +5952,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R43")
+					(reference "R113")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R44")
+					(reference "R200")
 					(unit 1)
 				)
 			)
@@ -5891,7 +5972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6d48668-bbd9-407f-9e66-78aa83ddb8d4")
-		(property "Reference" "C9"
+		(property "Reference" "C81"
 			(at 81.28 72.39 90)
 			(effects
 				(font
@@ -5925,7 +6006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 81.28 80.01 0)
 			(effects
 				(font
@@ -5952,11 +6033,92 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C9")
+					(reference "C81")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C10")
+					(reference "C209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "QuERI_symbols:Csmall")
+		(at 58.42 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8c3f28c-0e81-4bc0-8fbf-df93a2ef556c")
+		(property "Reference" "C79"
+			(at 58.42 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "62pF"
+			(at 58.42 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 62.23 67.6148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 58.42 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Spec" "50WVDC C0G"
+			(at 58.42 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aa9a3025-0642-4174-bc3c-190c96383223")
+		)
+		(pin "1"
+			(uuid "c5411925-9b17-4510-b2b3-d67ee53cf75b")
+		)
+		(instances
+			(project "MPU"
+				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
+					(reference "C79")
+					(unit 1)
+				)
+				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
+					(reference "C207")
 					(unit 1)
 				)
 			)
@@ -5972,7 +6134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9b9ba30-2c01-4a1c-97d5-f803fd880998")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR0186"
 			(at 91.44 154.94 0)
 			(effects
 				(font
@@ -6007,7 +6169,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 91.44 148.59 0)
 			(effects
 				(font
@@ -6022,11 +6184,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR067")
+					(reference "#PWR0186")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR068")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -6042,7 +6204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1803a0c-ebd1-4bcb-a917-46f89c49275b")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR0184"
 			(at 74.93 53.34 0)
 			(effects
 				(font
@@ -6077,7 +6239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2.5F\""
 			(at 74.93 49.53 0)
 			(effects
 				(font
@@ -6092,11 +6254,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR057")
+					(reference "#PWR0184")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "#PWR058")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -6112,7 +6274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4de067c-f9b2-479d-be76-395944e811c0")
-		(property "Reference" "C13"
+		(property "Reference" "C82"
 			(at 85.09 139.7 0)
 			(effects
 				(font
@@ -6148,7 +6310,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 81.28 140.97 0)
 			(effects
 				(font
@@ -6175,92 +6337,11 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C13")
+					(reference "C82")
 					(unit 1)
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "QuERI_symbols:Rlowp")
-		(at 58.42 68.58 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fbb09f45-e988-4a07-af34-5e5131309416")
-		(property "Reference" "R25"
-			(at 58.42 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 58.42 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 58.42 70.358 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Spec" "1% 1/10W"
-			(at 58.42 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "207bd3e7-fd5f-412f-b4e9-79d0f13d1a10")
-		)
-		(pin "1"
-			(uuid "07fa3701-68cf-44d7-8d47-da5a17cdcd66")
-		)
-		(instances
-			(project "MPU"
-				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R25")
-					(unit 1)
-				)
-				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c/985bef9d-29f6-4d1d-ac4c-ca5e14973590"
-					(reference "R26")
+					(reference "C210")
 					(unit 1)
 				)
 			)

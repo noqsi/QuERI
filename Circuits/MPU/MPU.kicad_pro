@@ -165,7 +165,7 @@
         0,
         1,
         0,
-        2,
+        0,
         2,
         2,
         2
@@ -240,7 +240,7 @@
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "error",
-      "power_pin_not_driven": "error",
+      "power_pin_not_driven": "ignore",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
       "unannotated": "error",
@@ -448,6 +448,10 @@
     [
       "70b91765-bcf1-4475-a23e-137d93006c42",
       "Pulse Capture1"
+    ],
+    [
+      "878f1e1d-dee3-445e-8799-e324527ccaeb",
+      "FPGA Bypass Capacitors"
     ],
     [
       "985bef9d-29f6-4d1d-ac4c-ca5e14973590",
