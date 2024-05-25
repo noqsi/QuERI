@@ -16529,7 +16529,7 @@
 			)
 		)
 		(property "Value" "47uF"
-			(at 195.58 130.8099 0)
+			(at 195.072 130.556 0)
 			(effects
 				(font
 					(size 1.27 1.27)

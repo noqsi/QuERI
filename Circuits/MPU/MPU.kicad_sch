@@ -31163,8 +31163,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b8b58de-a3b8-49e8-8932-95c14d803eb0")
-		(property "Reference" "	U1"
-			(at 87.63 90.17 90)
+		(property "Reference" "U1"
+			(at 87.63 90.1699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31173,7 +31173,7 @@
 			)
 		)
 		(property "Value" "ProASIC"
-			(at 87.63 92.71 90)
+			(at 87.63 92.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31926,7 +31926,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9"
-					(reference "	U1")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -31942,8 +31942,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13ceb731-62a0-41d7-8c57-ef6841ca6d0c")
-		(property "Reference" "	U1"
-			(at 87.63 166.37 90)
+		(property "Reference" "U1"
+			(at 87.63 166.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31952,7 +31952,7 @@
 			)
 		)
 		(property "Value" "ProASIC"
-			(at 87.63 168.91 90)
+			(at 87.63 168.9099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32705,7 +32705,7 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9"
-					(reference "	U1")
+					(reference "U1")
 					(unit 2)
 				)
 			)
@@ -38532,6 +38532,43 @@
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 143.51 93.98)
+		(size 25.4 19.05)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "878f1e1d-dee3-445e-8799-e324527ccaeb")
+		(property "Sheetname" "FPGA Bypass Capacitors"
+			(at 144.526 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "bypass.kicad_sch"
+			(at 143.51 113.6146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MPU"
+				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9"
+					(page "16")
 				)
 			)
 		)
