@@ -6,7 +6,7 @@
 	(paper "USLetter")
 	(title_block
 		(title "QuERI MPU")
-		(date "2024-03-28")
+		(date "2024-05-26")
 		(rev "Draft")
 		(company "Noqsi Aerospace Ltd")
 		(comment 1 "15 Blanchard Avenue, Billerica MA 01821")
@@ -12459,7 +12459,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "	Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
+		(property "Footprint" "Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
 			(at 30.48 69.85 0)
 			(effects
 				(font
@@ -13340,7 +13340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 251.46 26.67 0)
 			(effects
 				(font
@@ -13549,7 +13549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 190.5 26.67 0)
 			(effects
 				(font
@@ -13867,7 +13867,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "19c973b9-0eef-422a-8fc2-952d055e3270")
 		(property "Reference" "C39"
@@ -13879,7 +13879,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "10uF"
 			(at 44.45 160.0199 0)
 			(effects
 				(font
@@ -13915,7 +13915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 40.64 158.75 0)
 			(effects
 				(font
@@ -14124,7 +14124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 200.66 48.26 0)
 			(effects
 				(font
@@ -15066,7 +15066,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-24_W15.24mm_Socket"
 			(at 59.69 175.26 0)
 			(effects
 				(font
@@ -15533,7 +15533,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 210.82 26.67 0)
 			(effects
 				(font
@@ -15696,7 +15696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 220.98 48.26 0)
 			(effects
 				(font
@@ -16096,7 +16096,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 173.99 25.7048 0)
 			(effects
 				(font
@@ -16123,7 +16123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 170.18 26.67 0)
 			(effects
 				(font
@@ -16576,7 +16576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 64.77 135.89 0)
 			(effects
 				(font
@@ -17196,7 +17196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "6.3WVDC X7R"
 			(at 191.77 129.54 0)
 			(effects
 				(font
@@ -17522,7 +17522,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 143.51 47.2948 0)
 			(effects
 				(font
@@ -17549,7 +17549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 139.7 48.26 0)
 			(effects
 				(font
@@ -19030,7 +19030,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 109.22 70.1548 0)
 			(effects
 				(font
@@ -19057,7 +19057,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 105.41 71.12 0)
 			(effects
 				(font
@@ -19393,7 +19393,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 153.67 25.7048 0)
 			(effects
 				(font
@@ -19420,7 +19420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 149.86 26.67 0)
 			(effects
 				(font
@@ -19583,7 +19583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 66.04 163.83 0)
 			(effects
 				(font
@@ -20103,7 +20103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 231.14 26.67 0)
 			(effects
 				(font
@@ -20486,7 +20486,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 180.34 48.26 0)
 			(effects
 				(font
@@ -20710,7 +20710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "10WVDC X7R"
 			(at 36.83 105.41 0)
 			(effects
 				(font
@@ -21420,7 +21420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "6.3WVDC X7R"
 			(at 248.92 130.81 0)
 			(effects
 				(font
@@ -21732,7 +21732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 71.12 43.18 0)
 			(effects
 				(font
@@ -22568,7 +22568,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "db39e9d5-7f51-4e92-a971-8382335ffda1")
 		(property "Reference" "C38"
@@ -22580,7 +22580,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "10uF"
 			(at 44.45 135.8899 0)
 			(effects
 				(font
@@ -22616,7 +22616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 40.64 134.62 0)
 			(effects
 				(font
@@ -22944,7 +22944,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e2e29c7f-2e9d-457a-a1ce-7b541c8c84ad")
 		(property "Reference" "C40"
@@ -22956,7 +22956,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "10uF"
 			(at 48.26 146.0499 0)
 			(effects
 				(font
@@ -22992,7 +22992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 44.45 144.78 0)
 			(effects
 				(font
@@ -23042,7 +23042,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 163.83 47.2948 0)
 			(effects
 				(font
@@ -23069,7 +23069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 160.02 48.26 0)
 			(effects
 				(font
@@ -23434,7 +23434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 72.39 95.25 0)
 			(effects
 				(font
@@ -23972,7 +23972,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-24_W15.24mm_Socket"
 			(at 59.69 137.16 0)
 			(effects
 				(font
@@ -24240,7 +24240,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 241.3 48.26 0)
 			(effects
 				(font

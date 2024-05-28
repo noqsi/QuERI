@@ -318,7 +318,7 @@
           "group_by": false,
           "label": "Reference",
           "name": "Reference",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -330,10 +330,10 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -349,11 +349,107 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Category",
+          "name": "Category",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DK_Datasheet_Link",
+          "name": "DK_Datasheet_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DK_Detail_Page",
+          "name": "DK_Detail_Page",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digi-Key_PN",
+          "name": "Digi-Key_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Family",
+          "name": "Family",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": true,
+          "label": "Spec",
+          "name": "Spec",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Status",
+          "name": "Status",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "desc",
+          "name": "desc",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "manf#",
+          "name": "manf#",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -410,8 +506,40 @@
       "PerFPM"
     ],
     [
+      "985bef9d-29f6-4d1d-ac4c-ca5e14973590",
+      "FastShaper"
+    ],
+    [
+      "86e9e8ee-4d23-4721-9304-46d271d7d0b4",
+      "Pulse Capture"
+    ],
+    [
+      "3b07b8e1-ae64-464d-8273-632fc80715dd",
+      "SlowShaper"
+    ],
+    [
+      "70b91765-bcf1-4475-a23e-137d93006c42",
+      "Pulse Capture1"
+    ],
+    [
       "1779a0c4-4e7d-4c72-a255-5f54c542193c",
       "PerFPM1"
+    ],
+    [
+      "985bef9d-29f6-4d1d-ac4c-ca5e14973590",
+      "FastShaper"
+    ],
+    [
+      "86e9e8ee-4d23-4721-9304-46d271d7d0b4",
+      "Pulse Capture"
+    ],
+    [
+      "3b07b8e1-ae64-464d-8273-632fc80715dd",
+      "SlowShaper"
+    ],
+    [
+      "70b91765-bcf1-4475-a23e-137d93006c42",
+      "Pulse Capture1"
     ],
     [
       "9e58b4b2-62c5-43c0-a04c-5a5353afcf88",
@@ -426,40 +554,8 @@
       "LEDs"
     ],
     [
-      "985bef9d-29f6-4d1d-ac4c-ca5e14973590",
-      "FastShaper"
-    ],
-    [
-      "3b07b8e1-ae64-464d-8273-632fc80715dd",
-      "SlowShaper"
-    ],
-    [
-      "3b07b8e1-ae64-464d-8273-632fc80715dd",
-      "SlowShaper"
-    ],
-    [
-      "70b91765-bcf1-4475-a23e-137d93006c42",
-      "Pulse Capture1"
-    ],
-    [
-      "86e9e8ee-4d23-4721-9304-46d271d7d0b4",
-      "Pulse Capture"
-    ],
-    [
-      "70b91765-bcf1-4475-a23e-137d93006c42",
-      "Pulse Capture1"
-    ],
-    [
       "878f1e1d-dee3-445e-8799-e324527ccaeb",
       "FPGA Bypass Capacitors"
-    ],
-    [
-      "985bef9d-29f6-4d1d-ac4c-ca5e14973590",
-      "FastShaper"
-    ],
-    [
-      "86e9e8ee-4d23-4721-9304-46d271d7d0b4",
-      "Pulse Capture"
     ]
   ],
   "text_variables": {}

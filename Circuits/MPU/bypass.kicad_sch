@@ -6,7 +6,7 @@
 	(paper "USLetter")
 	(title_block
 		(title "QuERI MPU")
-		(date "2024-03-28")
+		(date "2024-05-26")
 		(rev "Draft")
 		(company "Noqsi Aerospace Ltd")
 		(comment 1 "15 Blanchard Avenue, Billerica MA 01821")
@@ -10450,7 +10450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "	Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
+		(property "Footprint" "Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
 			(at 245.11 22.86 0)
 			(effects
 				(font
@@ -11905,7 +11905,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "	Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
+		(property "Footprint" "Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
 			(at 204.47 95.25 0)
 			(effects
 				(font
@@ -13911,7 +13911,7 @@
 				)
 			)
 		)
-		(property "Footprint" "	Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
+		(property "Footprint" "Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
 			(at 44.45 95.25 0)
 			(effects
 				(font
@@ -14839,7 +14839,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "	Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
+		(property "Footprint" "Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
 			(at 140.97 22.86 0)
 			(effects
 				(font

@@ -6,7 +6,7 @@
 	(paper "USLetter")
 	(title_block
 		(title "QuERI MPU")
-		(date "2024-03-28")
+		(date "2024-05-26")
 		(rev "Draft")
 		(company "Noqsi Aerospace Ltd")
 		(comment 1 "15 Blanchard Avenue, Billerica MA 01821")
@@ -4442,7 +4442,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 187.96 166.6748 0)
 			(effects
 				(font
@@ -4469,7 +4469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "500WVDC C0G"
 			(at 184.15 167.64 0)
 			(effects
 				(font
@@ -5547,7 +5547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "500WVDC X7R"
 			(at 203.2 139.7 0)
 			(effects
 				(font
@@ -6301,7 +6301,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.11k"
+		(property "Value" "4.99k"
 			(at 52.07 66.04 0)
 			(effects
 				(font
@@ -7961,7 +7961,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "500WVDC X7R"
 			(at 240.03 157.48 0)
 			(effects
 				(font
@@ -8202,7 +8202,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "50WVDC C0G"
+		(property "Spec" "50WVDC X7R"
 			(at 171.45 36.83 0)
 			(effects
 				(font
@@ -10840,10 +10840,10 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2"
-					(page "9")
+					(page "6")
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c"
-					(page "10")
+					(page "11")
 				)
 			)
 		)
@@ -10971,10 +10971,10 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2"
-					(page "11")
+					(page "7")
 				)
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c"
-					(page "13")
+					(page "12")
 				)
 			)
 		)
@@ -11102,7 +11102,10 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2"
-					(page "12")
+					(page "5")
+				)
+				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c"
+					(page "10")
 				)
 			)
 		)
@@ -11170,7 +11173,10 @@
 		(instances
 			(project "MPU"
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/dd62822d-07cb-405d-be36-24fcc5049fb2"
-					(page "8")
+					(page "4")
+				)
+				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9/1779a0c4-4e7d-4c72-a255-5f54c542193c"
+					(page "9")
 				)
 			)
 		)
