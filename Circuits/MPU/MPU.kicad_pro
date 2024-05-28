@@ -499,47 +499,47 @@
     ],
     [
       "3fddf26f-df47-4fe5-96fb-49a4af7bb6c0",
-      "SerialIF"
+      "Serial Interfaces"
     ],
     [
       "dd62822d-07cb-405d-be36-24fcc5049fb2",
-      "PerFPM"
+      "PerFPM-0"
     ],
     [
       "985bef9d-29f6-4d1d-ac4c-ca5e14973590",
-      "FastShaper"
+      "Fast Shaper"
     ],
     [
       "86e9e8ee-4d23-4721-9304-46d271d7d0b4",
-      "Pulse Capture"
+      "Fast Pulse Capture"
     ],
     [
       "3b07b8e1-ae64-464d-8273-632fc80715dd",
-      "SlowShaper"
+      "Slow Shaper"
     ],
     [
       "70b91765-bcf1-4475-a23e-137d93006c42",
-      "Pulse Capture1"
+      "Slow Pulse Capture"
     ],
     [
       "1779a0c4-4e7d-4c72-a255-5f54c542193c",
-      "PerFPM1"
+      "PerFPM-1"
     ],
     [
       "985bef9d-29f6-4d1d-ac4c-ca5e14973590",
-      "FastShaper"
+      "Fast Shaper"
     ],
     [
       "86e9e8ee-4d23-4721-9304-46d271d7d0b4",
-      "Pulse Capture"
+      "Fast Pulse Capture"
     ],
     [
       "3b07b8e1-ae64-464d-8273-632fc80715dd",
-      "SlowShaper"
+      "Slow Shaper"
     ],
     [
       "70b91765-bcf1-4475-a23e-137d93006c42",
-      "Pulse Capture1"
+      "Slow Pulse Capture"
     ],
     [
       "9e58b4b2-62c5-43c0-a04c-5a5353afcf88",
@@ -555,7 +555,7 @@
     ],
     [
       "878f1e1d-dee3-445e-8799-e324527ccaeb",
-      "FPGA Bypass Capacitors"
+      "FPGA Power"
     ]
   ],
   "text_variables": {}

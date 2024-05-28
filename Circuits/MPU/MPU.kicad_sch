@@ -19973,7 +19973,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "1779a0c4-4e7d-4c72-a255-5f54c542193c")
-		(property "Sheetname" "PerFPM1"
+		(property "Sheetname" "PerFPM-1"
 			(at 50.8 105.9684 0)
 			(effects
 				(font
@@ -20339,7 +20339,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "3fddf26f-df47-4fe5-96fb-49a4af7bb6c0")
-		(property "Sheetname" "SerialIF"
+		(property "Sheetname" "Serial Interfaces"
 			(at 134.62 15.7984 0)
 			(effects
 				(font
@@ -20516,8 +20516,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "878f1e1d-dee3-445e-8799-e324527ccaeb")
-		(property "Sheetname" "FPGA Bypass Capacitors"
-			(at 144.526 104.14 0)
+		(property "Sheetname" "FPGA Power"
+			(at 150.622 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20770,7 +20770,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "dd62822d-07cb-405d-be36-24fcc5049fb2")
-		(property "Sheetname" "PerFPM"
+		(property "Sheetname" "PerFPM-0"
 			(at 50.8 29.7684 0)
 			(effects
 				(font

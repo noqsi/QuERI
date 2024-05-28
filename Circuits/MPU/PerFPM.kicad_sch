@@ -10789,7 +10789,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "3b07b8e1-ae64-464d-8273-632fc80715dd")
-		(property "Sheetname" "SlowShaper"
+		(property "Sheetname" "Slow Shaper"
 			(at 68.58 48.8184 0)
 			(effects
 				(font
@@ -10860,7 +10860,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "70b91765-bcf1-4475-a23e-137d93006c42")
-		(property "Sheetname" "Pulse Capture1"
+		(property "Sheetname" "Slow Pulse Capture"
 			(at 95.25 47.5484 0)
 			(effects
 				(font
@@ -10991,7 +10991,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "86e9e8ee-4d23-4721-9304-46d271d7d0b4")
-		(property "Sheetname" "Pulse Capture"
+		(property "Sheetname" "Fast Pulse Capture"
 			(at 95.25 23.4184 0)
 			(effects
 				(font
@@ -11122,7 +11122,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "985bef9d-29f6-4d1d-ac4c-ca5e14973590")
-		(property "Sheetname" "FastShaper"
+		(property "Sheetname" "Fast Shaper"
 			(at 68.58 24.6884 0)
 			(effects
 				(font
