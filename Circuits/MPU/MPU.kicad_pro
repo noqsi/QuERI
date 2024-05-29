@@ -498,10 +498,6 @@
       "Root"
     ],
     [
-      "3fddf26f-df47-4fe5-96fb-49a4af7bb6c0",
-      "Serial Interfaces"
-    ],
-    [
       "dd62822d-07cb-405d-be36-24fcc5049fb2",
       "PerFPM-0"
     ],
@@ -542,20 +538,24 @@
       "Slow Pulse Capture"
     ],
     [
-      "9e58b4b2-62c5-43c0-a04c-5a5353afcf88",
-      "DAC and Housekeeping"
-    ],
-    [
       "23255e26-6d01-448b-ab25-9f7b3dc0af59",
       "Power"
     ],
     [
-      "028dc115-76c0-407b-8cb2-dbe1c892e7d7",
-      "LEDs"
-    ],
-    [
       "878f1e1d-dee3-445e-8799-e324527ccaeb",
       "FPGA Power"
+    ],
+    [
+      "9e58b4b2-62c5-43c0-a04c-5a5353afcf88",
+      "DAC and Housekeeping"
+    ],
+    [
+      "3fddf26f-df47-4fe5-96fb-49a4af7bb6c0",
+      "Serial Interfaces"
+    ],
+    [
+      "028dc115-76c0-407b-8cb2-dbe1c892e7d7",
+      "LEDs"
     ]
   ],
   "text_variables": {}
