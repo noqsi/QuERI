@@ -1,0 +1,59 @@
+* from https://ltwiki.org/files/LTSpicePartListAPI.html
+* Spice_Node_Sequence: [1] In+ , [2] In- , [3] Vcc , [4] Vee , [5] VS+ , [6] GND , [7] OUT ,
+*
+* from https://github.com/evenator/LTSpice-Libraries/blob/master/sub/LTC1.lib
+* 
+.subckt LT1715 1 2 3 4 5 6 7
+B1 0 N002 I=10u*dnlim(uplim(V(1),V(3)-1.1,.1), V(4)-.2 ,.1)+1n*V(1)+144n*V(VDH)
+B2 N002 0 I=10u*dnlim(uplim(V(2),V(3)-1.09,.1), V(4)-.21, .1)+1n*V(2)
+C1 N002 0 1f Rpar=100K
+A1 0 N002 0 0 0 0 VDH 0 OTA g=10m iout=100u Vlow=-1e308 Vhigh=1e308 Cout=30f
+D5 0 VDH DLAT
+C4 2 4 .2p
+C10 1 4 .2p
+C11 4 6 2p
+D13 3 4 DP1
+D14 5 4 DP2
+M3 7 N009 N010 N010 NI temp=27
+M4 7 N007 N005 N005 PI temp=27
+C7 5 7 1p
+C8 7 6 1p
+D8 5 N005 DILIMU
+D16 N010 6 DILIMD
+C9 5 N005 100f
+C14 N010 6 100f
+R7 N009 6 2G
+D3 N009 6 DSIONN temp=27
+D7 6 N009 DSIOFFN temp=27
+G2 0 N009 0 VDH 90n
+C2 7 N009 .035f
+D1 N007 5 DSIOFFP temp=27
+D15 5 N007 DSIONP temp=27
+R1 5 N007 2G
+C15 N007 7 .04f
+A2 VDH 0 0 0 0 0 N009 0 OTA g=30n asym isource=0 isink=-100n Vlow=-1e308 Vhigh=1e308 Cout=.05f
+A3 VDH 0 0 0 0 0 N007 0 OTA g=40n asym isource=100n isink=0 Vlow=-1e308 Vhigh=1e308 Cout=.08f
+C5 3 2 .2p
+C6 3 1 .2p
+D2 3 2 DBIAS
+D4 3 1 DBIAS
+D6 1 2 DBIASC
+D9 5 6 DP3
+C12 5 3 2p
+G3 0 N007 0 VDH 90n
+.model DLAT D(Ron=1 Roff=10k Vfwd=1 Vrev=1 epsilon=.9 revepsilon=.9)
+.model DILIMU D(Ron=3 Roff=100k Vfwd=130m ilimit=30m epsilon=50m)
+.model DILIMD D(Ron=3 Roff=100k Vfwd=130m ilimit=40m epsilon=50m)
+.model DSIONN D(Is=1e-30 N=2 TT=8e-10)
+.model DSIOFFN D(Is=1e-10 N=1 TT= 1.1e-9)
+.model DSIONP D(Is=1e-30 N=2 TT=3e-10)
+.model DSIOFFP D(Is=1e-10 N=1 TT=1.1e-9)
+.model NI VDMOS(Vto=100m kp=600m mtriode= .1 rds=10k)
+.model PI VDMOS(Vto=-100m Kp=300m  mtriode=.1 rds=10k pchan)
+.model DP1  D(Ron=100 Roff=1Meg Vfwd=1 ilimit=1m epsilon=.1)
+.model DP2  D(Ron=100 Roff=1Meg Vfwd=1 ilimit=1.9m epsilon=.1)
+.model DP3 D(Ron=100 Roff=1Meg Vfwd=1 ilimit=2.23m epsilon=.1)
+.model DBIAS D(Ron=1k Roff=10G Vfwd=1 epsilon=.1 ilimit=2.5u)
+.model DBIASC D(Ron=10k Roff=10G Vfwd= 1u Vrev=1u
++ epsilon=10u revepsilon=10u ilimit=2.5u revilimit=2.5u)
+.ends LT1715
