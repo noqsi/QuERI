@@ -6,7 +6,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "	U"
+		(property "Reference" "U"
 			(at 7.62 6.35 0)
 			(effects
 				(font
@@ -24,7 +24,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "	Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
+		(property "Footprint" "Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
 			(at 7.62 1.27 0)
 			(effects
 				(font
@@ -34,7 +34,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "	https://www.microsemi.com/document-portal/doc_download/130701-ds0098-proasic3e-flash-family-fpgas-datasheet"
+		(property "Datasheet" "https://www.microsemi.com/document-portal/doc_download/130701-ds0098-proasic3e-flash-family-fpgas-datasheet"
 			(at 7.62 -3.81 0)
 			(effects
 				(font
@@ -44,7 +44,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "	A3PE3000-FGG484"
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manf#" "A3PE3000-FGG484"
 			(at 7.62 -1.27 0)
 			(effects
 				(font
@@ -54,7 +63,7 @@
 				(hide yes)
 			)
 		)
-		(property "desc" "	FPGA"
+		(property "desc" "FPGA"
 			(at 7.62 -6.35 0)
 			(effects
 				(font
@@ -816,7 +825,7 @@
 		(symbol "ProASIC_4_1"
 			(rectangle
 				(start 7.62 2.54)
-				(end 15.24 -27.94)
+				(end 22.86 -27.94)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -933,6 +942,42 @@
 					)
 				)
 			)
+			(pin output line
+				(at 30.48 -20.32 180)
+				(length 7.62)
+				(name "MXDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 30.48 -25.4 180)
+				(length 7.62)
+				(name "MXAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input inverted
 				(at 0 -12.7 0)
 				(length 7.62)
@@ -944,6 +989,42 @@
 					)
 				)
 				(number "P22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output inverted
+				(at 30.48 -17.78 180)
+				(length 7.62)
+				(name "MXDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input inverted
+				(at 30.48 -22.86 180)
+				(length 7.62)
+				(name "MXAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -969,6 +1050,42 @@
 					)
 				)
 			)
+			(pin output line
+				(at 30.48 -10.16 180)
+				(length 7.62)
+				(name "MXAS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 30.48 -15.24 180)
+				(length 7.62)
+				(name "MXCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output inverted
 				(at 0 -17.78 0)
 				(length 7.62)
@@ -980,6 +1097,42 @@
 					)
 				)
 				(number "T22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output inverted
+				(at 30.48 -7.62 180)
+				(length 7.62)
+				(name "MXAS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output inverted
+				(at 30.48 -12.7 180)
+				(length 7.62)
+				(name "MXCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1005,6 +1158,24 @@
 					)
 				)
 			)
+			(pin output line
+				(at 30.48 -5.08 180)
+				(length 7.62)
+				(name "MXDS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output inverted
 				(at 0 -22.86 0)
 				(length 7.62)
@@ -1016,6 +1187,24 @@
 					)
 				)
 				(number "V22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output inverted
+				(at 30.48 -2.54 180)
+				(length 7.62)
+				(name "MXDS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1727,103 +1916,13 @@
 		(symbol "ProASIC_9_1"
 			(rectangle
 				(start 7.62 2.54)
-				(end 15.24 -17.78)
+				(end 15.24 -5.08)
 				(stroke
 					(width 0.254)
 					(type solid)
 				)
 				(fill
 					(type none)
-				)
-			)
-			(pin output line
-				(at 0 -12.7 0)
-				(length 7.62)
-				(name "MXDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "M3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -5.08 0)
-				(length 7.62)
-				(name "MXDS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "M7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -7.62 0)
-				(length 7.62)
-				(name "MXAS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "N5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -10.16 0)
-				(length 7.62)
-				(name "MXCLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "N6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 0 -15.24 0)
-				(length 7.62)
-				(name "MXAD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "P4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
 				)
 			)
 			(pin output line
