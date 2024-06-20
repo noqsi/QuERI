@@ -290,7 +290,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "	Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
+			(property "Footprint" "Package_BGA:BGA-484_23.0x23.0mm_Layout22x22_P1.0mm"
 				(at 7.62 1.27 0)
 				(effects
 					(font
@@ -300,7 +300,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "	https://www.microsemi.com/document-portal/doc_download/130701-ds0098-proasic3e-flash-family-fpgas-datasheet"
+			(property "Datasheet" "https://www.microsemi.com/document-portal/doc_download/130701-ds0098-proasic3e-flash-family-fpgas-datasheet"
 				(at 7.62 -3.81 0)
 				(effects
 					(font
@@ -310,7 +310,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "	A3PE3000-FGG484"
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "manf#" "A3PE3000-FGG484"
 				(at 7.62 -1.27 0)
 				(effects
 					(font
@@ -320,7 +329,7 @@
 					(hide yes)
 				)
 			)
-			(property "desc" "	FPGA"
+			(property "desc" "FPGA"
 				(at 7.62 -6.35 0)
 				(effects
 					(font
@@ -1082,7 +1091,7 @@
 			(symbol "ProASIC_4_1"
 				(rectangle
 					(start 7.62 2.54)
-					(end 15.24 -27.94)
+					(end 22.86 -27.94)
 					(stroke
 						(width 0.254)
 						(type solid)
@@ -1199,6 +1208,42 @@
 						)
 					)
 				)
+				(pin output line
+					(at 30.48 -20.32 180)
+					(length 7.62)
+					(name "MXDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "P19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 30.48 -25.4 180)
+					(length 7.62)
+					(name "MXAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "P21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input inverted
 					(at 0 -12.7 0)
 					(length 7.62)
@@ -1210,6 +1255,42 @@
 						)
 					)
 					(number "P22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 30.48 -17.78 180)
+					(length 7.62)
+					(name "MXDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input inverted
+					(at 30.48 -22.86 180)
+					(length 7.62)
+					(name "MXAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1235,6 +1316,42 @@
 						)
 					)
 				)
+				(pin output line
+					(at 30.48 -10.16 180)
+					(length 7.62)
+					(name "MXAS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 30.48 -15.24 180)
+					(length 7.62)
+					(name "MXCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin output inverted
 					(at 0 -17.78 0)
 					(length 7.62)
@@ -1246,6 +1363,42 @@
 						)
 					)
 					(number "T22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 30.48 -7.62 180)
+					(length 7.62)
+					(name "MXAS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "U20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 30.48 -12.7 180)
+					(length 7.62)
+					(name "MXCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "U21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1271,6 +1424,24 @@
 						)
 					)
 				)
+				(pin output line
+					(at 30.48 -5.08 180)
+					(length 7.62)
+					(name "MXDS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "V21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin output inverted
 					(at 0 -22.86 0)
 					(length 7.62)
@@ -1282,6 +1453,24 @@
 						)
 					)
 					(number "V22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 30.48 -2.54 180)
+					(length 7.62)
+					(name "MXDS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "W21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -11302,7 +11491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "	https://www.microsemi.com/document-portal/doc_download/130701-ds0098-proasic3e-flash-family-fpgas-datasheet"
+		(property "Datasheet" "https://www.microsemi.com/document-portal/doc_download/130701-ds0098-proasic3e-flash-family-fpgas-datasheet"
 			(at 30.48 87.63 0)
 			(effects
 				(font
@@ -11322,8 +11511,18 @@
 				(hide yes)
 			)
 		)
-		(property "desc" "	FPGA"
+		(property "desc" "FPGA"
 			(at 30.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "manf#" "A3PE3000-FGG484"
+			(at 30.48 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12024,6 +12223,36 @@
 		)
 		(pin "AB8"
 			(uuid "01293043-38a1-4f78-a9ed-f18b48b121a5")
+		)
+		(pin "P19"
+			(uuid "6a100568-d273-4ffb-aa13-236736a91bba")
+		)
+		(pin "P21"
+			(uuid "17232d28-824d-417d-8d91-c75b84e08bd2")
+		)
+		(pin "R19"
+			(uuid "621de7d7-7e62-4f09-8a5d-d2bdeda61b5e")
+		)
+		(pin "R21"
+			(uuid "eb433f4e-89c0-4afc-9d51-555dad0d52ce")
+		)
+		(pin "T20"
+			(uuid "7854631a-d4ee-4ab8-8bf5-5447014001b0")
+		)
+		(pin "T21"
+			(uuid "8e261a52-90a4-4fe6-97a5-897121c61811")
+		)
+		(pin "U20"
+			(uuid "916798d0-b036-4f5c-9149-90c408177ee4")
+		)
+		(pin "U21"
+			(uuid "205cfe8a-de34-41b9-8496-20c3e9f126b2")
+		)
+		(pin "V21"
+			(uuid "274d8466-791f-4821-9911-614f3c7c577c")
+		)
+		(pin "W21"
+			(uuid "a86050bf-ec7b-4c58-8693-93e1c7b01435")
 		)
 		(instances
 			(project "MPU"
@@ -12806,7 +13035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "	https://www.microsemi.com/document-portal/doc_download/130701-ds0098-proasic3e-flash-family-fpgas-datasheet"
+		(property "Datasheet" "https://www.microsemi.com/document-portal/doc_download/130701-ds0098-proasic3e-flash-family-fpgas-datasheet"
 			(at 248.92 143.51 0)
 			(effects
 				(font
@@ -12826,8 +13055,18 @@
 				(hide yes)
 			)
 		)
-		(property "desc" "	FPGA"
+		(property "desc" "FPGA"
 			(at 248.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "manf#" "A3PE3000-FGG484"
+			(at 248.92 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13528,6 +13767,36 @@
 		)
 		(pin "A8"
 			(uuid "d393694e-5d75-42a6-8d02-d88fbffa1b2e")
+		)
+		(pin "P19"
+			(uuid "31244e43-f220-4d13-a831-7b85a495291e")
+		)
+		(pin "P21"
+			(uuid "6a6a9c1c-be66-4365-b73e-93f0f3392b51")
+		)
+		(pin "R19"
+			(uuid "0f3b2dff-2853-47ed-a097-fdbc2d839a78")
+		)
+		(pin "R21"
+			(uuid "67387d6b-3ee4-4797-8e53-bf626b5ba42a")
+		)
+		(pin "T20"
+			(uuid "4a62829a-de8e-46a4-b119-8f33e3f81b0b")
+		)
+		(pin "T21"
+			(uuid "a4360b15-1709-49c2-9729-59f17ad19534")
+		)
+		(pin "U20"
+			(uuid "263c32bb-1ebd-4c8b-9ed9-aa7e8e176d20")
+		)
+		(pin "U21"
+			(uuid "1db1861a-c15b-4c95-bdf2-b3a3886494ca")
+		)
+		(pin "V21"
+			(uuid "17c883e8-347f-41de-84d9-ab8a945b3909")
+		)
+		(pin "W21"
+			(uuid "3f8d9efd-3967-4a43-acc9-15b218b0ca8e")
 		)
 		(instances
 			(project "MPU"

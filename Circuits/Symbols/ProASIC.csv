@@ -54,6 +54,16 @@ T22,	SOUT,	Bank3,	output,	inverted,
 U22,	DOUT,	Bank3,	output,,
 V22,	DOUT,	Bank3,	output,	inverted,
 M16,	MCLK,	Bank3,	input,	clock,
+W21,	MXDS,	Bank3,	output,	inverted,	right
+V21,	MXDS,	Bank3,	output,,	right
+U20,	MXAS,	Bank3,	output,	inverted,	right
+T20,	MXAS,	Bank3,	output,,	right
+U21,	MXCLK,	Bank3,	output,	inverted,	right
+T21,	MXCLK,	Bank3,	output,,	right
+R19,	MXDD,	Bank3,	output,	inverted,	right
+P19,	MXDD,	Bank3,	output,,	right
+R21,	MXAD,	Bank3,	input,	inverted,	right
+P21,	MXAD,	Bank3,	input,, right
 C21,	BIT1,	Bank2,	input,,
 D21,	BIT2,	Bank2,	input,,
 D22,	BIT3,	Bank2,	input,,
@@ -89,11 +99,6 @@ M2,	GREEN,	Bank6,	output,,
 L1,	BLUE,	Bank6,	output,,
 R6,	RX422,	Bank6_422,	input,,
 R5,	TX422,	Bank6_422,	output,,
-M7,	MXDS,	Bank6_422,	output,,
-N5,	MXAS,	Bank6_422,	output,,
-N6,	MXCLK,	Bank6_422,	output,,
-M3,	MXDD,	Bank6_422,	output,,
-P4,	MXAD,	Bank6_422,	input,,
 U16,	TCK,	JTAG,	input,,
 V19,	TDO,	JTAG,	output,,
 W18,	TMS,	JTAG,	input,,
