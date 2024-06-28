@@ -825,7 +825,7 @@
 		(symbol "ProASIC_4_1"
 			(rectangle
 				(start 7.62 2.54)
-				(end 22.86 -27.94)
+				(end 22.86 -25.4)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -835,7 +835,7 @@
 				)
 			)
 			(pin input clock
-				(at 0 -25.4 0)
+				(at 0 -20.32 0)
 				(length 7.62)
 				(name "MCLK"
 					(effects
@@ -855,42 +855,6 @@
 			(pin input line
 				(at 0 0 0)
 				(length 7.62)
-				(name "PPS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "M19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input inverted
-				(at 0 -2.54 0)
-				(length 7.62)
-				(name "PPS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "M20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 0 -5.08 0)
-				(length 7.62)
 				(name "DIN"
 					(effects
 						(font
@@ -907,7 +871,7 @@
 				)
 			)
 			(pin input inverted
-				(at 0 -7.62 0)
+				(at 0 -2.54 0)
 				(length 7.62)
 				(name "DIN"
 					(effects
@@ -925,7 +889,7 @@
 				)
 			)
 			(pin input line
-				(at 0 -10.16 0)
+				(at 0 -5.08 0)
 				(length 7.62)
 				(name "SIN"
 					(effects
@@ -943,7 +907,7 @@
 				)
 			)
 			(pin output line
-				(at 30.48 -20.32 180)
+				(at 30.48 -17.78 180)
 				(length 7.62)
 				(name "MXDD"
 					(effects
@@ -961,7 +925,7 @@
 				)
 			)
 			(pin input line
-				(at 30.48 -25.4 180)
+				(at 30.48 -22.86 180)
 				(length 7.62)
 				(name "MXAD"
 					(effects
@@ -979,7 +943,7 @@
 				)
 			)
 			(pin input inverted
-				(at 0 -12.7 0)
+				(at 0 -7.62 0)
 				(length 7.62)
 				(name "SIN"
 					(effects
@@ -997,7 +961,7 @@
 				)
 			)
 			(pin output inverted
-				(at 30.48 -17.78 180)
+				(at 30.48 -15.24 180)
 				(length 7.62)
 				(name "MXDD"
 					(effects
@@ -1015,7 +979,7 @@
 				)
 			)
 			(pin input inverted
-				(at 30.48 -22.86 180)
+				(at 30.48 -20.32 180)
 				(length 7.62)
 				(name "MXAD"
 					(effects
@@ -1033,7 +997,7 @@
 				)
 			)
 			(pin output line
-				(at 0 -15.24 0)
+				(at 0 -10.16 0)
 				(length 7.62)
 				(name "SOUT"
 					(effects
@@ -1051,7 +1015,7 @@
 				)
 			)
 			(pin output line
-				(at 30.48 -10.16 180)
+				(at 30.48 -7.62 180)
 				(length 7.62)
 				(name "MXAS"
 					(effects
@@ -1069,7 +1033,7 @@
 				)
 			)
 			(pin output line
-				(at 30.48 -15.24 180)
+				(at 30.48 -12.7 180)
 				(length 7.62)
 				(name "MXCLK"
 					(effects
@@ -1087,7 +1051,7 @@
 				)
 			)
 			(pin output inverted
-				(at 0 -17.78 0)
+				(at 0 -12.7 0)
 				(length 7.62)
 				(name "SOUT"
 					(effects
@@ -1105,7 +1069,7 @@
 				)
 			)
 			(pin output inverted
-				(at 30.48 -7.62 180)
+				(at 30.48 -5.08 180)
 				(length 7.62)
 				(name "MXAS"
 					(effects
@@ -1123,7 +1087,7 @@
 				)
 			)
 			(pin output inverted
-				(at 30.48 -12.7 180)
+				(at 30.48 -10.16 180)
 				(length 7.62)
 				(name "MXCLK"
 					(effects
@@ -1141,7 +1105,7 @@
 				)
 			)
 			(pin output line
-				(at 0 -20.32 0)
+				(at 0 -15.24 0)
 				(length 7.62)
 				(name "DOUT"
 					(effects
@@ -1159,7 +1123,7 @@
 				)
 			)
 			(pin output line
-				(at 30.48 -5.08 180)
+				(at 30.48 -2.54 180)
 				(length 7.62)
 				(name "MXDS"
 					(effects
@@ -1177,7 +1141,7 @@
 				)
 			)
 			(pin output inverted
-				(at 0 -22.86 0)
+				(at 0 -17.78 0)
 				(length 7.62)
 				(name "DOUT"
 					(effects
@@ -1195,7 +1159,7 @@
 				)
 			)
 			(pin output inverted
-				(at 30.48 -2.54 180)
+				(at 30.48 0 180)
 				(length 7.62)
 				(name "MXDS"
 					(effects
@@ -1916,7 +1880,7 @@
 		(symbol "ProASIC_9_1"
 			(rectangle
 				(start 7.62 2.54)
-				(end 15.24 -5.08)
+				(end 15.24 -10.16)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -1925,8 +1889,44 @@
 					(type none)
 				)
 			)
+			(pin input line
+				(at 0 -7.62 0)
+				(length 7.62)
+				(name "PPS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output line
-				(at 0 -2.54 0)
+				(at 0 0 0)
+				(length 7.62)
+				(name "MXINH"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 0 -5.08 0)
 				(length 7.62)
 				(name "TX422"
 					(effects
@@ -1944,7 +1944,7 @@
 				)
 			)
 			(pin input line
-				(at 0 0 0)
+				(at 0 -2.54 0)
 				(length 7.62)
 				(name "RX422"
 					(effects

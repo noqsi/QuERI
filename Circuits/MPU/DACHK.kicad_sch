@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "QuERI MPU")
-		(date "2024-06-05")
-		(rev "RR1")
+		(date "2024-06-27")
+		(rev "RR3")
 		(company "Noqsi Aerospace Ltd")
 		(comment 1 "15 Blanchard Avenue, Billerica MA 01821")
 		(comment 2 "jpd@noqsi.com")
@@ -1091,7 +1091,7 @@
 			(symbol "ProASIC_4_1"
 				(rectangle
 					(start 7.62 2.54)
-					(end 22.86 -27.94)
+					(end 22.86 -25.4)
 					(stroke
 						(width 0.254)
 						(type solid)
@@ -1101,7 +1101,7 @@
 					)
 				)
 				(pin input clock
-					(at 0 -25.4 0)
+					(at 0 -20.32 0)
 					(length 7.62)
 					(name "MCLK"
 						(effects
@@ -1121,42 +1121,6 @@
 				(pin input line
 					(at 0 0 0)
 					(length 7.62)
-					(name "PPS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "M19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input inverted
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "PPS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "M20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -5.08 0)
-					(length 7.62)
 					(name "DIN"
 						(effects
 							(font
@@ -1173,7 +1137,7 @@
 					)
 				)
 				(pin input inverted
-					(at 0 -7.62 0)
+					(at 0 -2.54 0)
 					(length 7.62)
 					(name "DIN"
 						(effects
@@ -1191,7 +1155,7 @@
 					)
 				)
 				(pin input line
-					(at 0 -10.16 0)
+					(at 0 -5.08 0)
 					(length 7.62)
 					(name "SIN"
 						(effects
@@ -1209,7 +1173,7 @@
 					)
 				)
 				(pin output line
-					(at 30.48 -20.32 180)
+					(at 30.48 -17.78 180)
 					(length 7.62)
 					(name "MXDD"
 						(effects
@@ -1227,7 +1191,7 @@
 					)
 				)
 				(pin input line
-					(at 30.48 -25.4 180)
+					(at 30.48 -22.86 180)
 					(length 7.62)
 					(name "MXAD"
 						(effects
@@ -1245,7 +1209,7 @@
 					)
 				)
 				(pin input inverted
-					(at 0 -12.7 0)
+					(at 0 -7.62 0)
 					(length 7.62)
 					(name "SIN"
 						(effects
@@ -1263,7 +1227,7 @@
 					)
 				)
 				(pin output inverted
-					(at 30.48 -17.78 180)
+					(at 30.48 -15.24 180)
 					(length 7.62)
 					(name "MXDD"
 						(effects
@@ -1281,7 +1245,7 @@
 					)
 				)
 				(pin input inverted
-					(at 30.48 -22.86 180)
+					(at 30.48 -20.32 180)
 					(length 7.62)
 					(name "MXAD"
 						(effects
@@ -1299,7 +1263,7 @@
 					)
 				)
 				(pin output line
-					(at 0 -15.24 0)
+					(at 0 -10.16 0)
 					(length 7.62)
 					(name "SOUT"
 						(effects
@@ -1317,7 +1281,7 @@
 					)
 				)
 				(pin output line
-					(at 30.48 -10.16 180)
+					(at 30.48 -7.62 180)
 					(length 7.62)
 					(name "MXAS"
 						(effects
@@ -1335,7 +1299,7 @@
 					)
 				)
 				(pin output line
-					(at 30.48 -15.24 180)
+					(at 30.48 -12.7 180)
 					(length 7.62)
 					(name "MXCLK"
 						(effects
@@ -1353,7 +1317,7 @@
 					)
 				)
 				(pin output inverted
-					(at 0 -17.78 0)
+					(at 0 -12.7 0)
 					(length 7.62)
 					(name "SOUT"
 						(effects
@@ -1371,7 +1335,7 @@
 					)
 				)
 				(pin output inverted
-					(at 30.48 -7.62 180)
+					(at 30.48 -5.08 180)
 					(length 7.62)
 					(name "MXAS"
 						(effects
@@ -1389,7 +1353,7 @@
 					)
 				)
 				(pin output inverted
-					(at 30.48 -12.7 180)
+					(at 30.48 -10.16 180)
 					(length 7.62)
 					(name "MXCLK"
 						(effects
@@ -1407,7 +1371,7 @@
 					)
 				)
 				(pin output line
-					(at 0 -20.32 0)
+					(at 0 -15.24 0)
 					(length 7.62)
 					(name "DOUT"
 						(effects
@@ -1425,7 +1389,7 @@
 					)
 				)
 				(pin output line
-					(at 30.48 -5.08 180)
+					(at 30.48 -2.54 180)
 					(length 7.62)
 					(name "MXDS"
 						(effects
@@ -1443,7 +1407,7 @@
 					)
 				)
 				(pin output inverted
-					(at 0 -22.86 0)
+					(at 0 -17.78 0)
 					(length 7.62)
 					(name "DOUT"
 						(effects
@@ -1461,7 +1425,7 @@
 					)
 				)
 				(pin output inverted
-					(at 30.48 -2.54 180)
+					(at 30.48 0 180)
 					(length 7.62)
 					(name "MXDS"
 						(effects
@@ -2182,7 +2146,7 @@
 			(symbol "ProASIC_9_1"
 				(rectangle
 					(start 7.62 2.54)
-					(end 15.24 -5.08)
+					(end 15.24 -10.16)
 					(stroke
 						(width 0.254)
 						(type solid)
@@ -2191,8 +2155,44 @@
 						(type none)
 					)
 				)
+				(pin input line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "PPS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "M3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin output line
-					(at 0 -2.54 0)
+					(at 0 0 0)
+					(length 7.62)
+					(name "MXINH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "M7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -5.08 0)
 					(length 7.62)
 					(name "TX422"
 						(effects
@@ -2210,7 +2210,7 @@
 					)
 				)
 				(pin input line
-					(at 0 0 0)
+					(at 0 -2.54 0)
 					(length 7.62)
 					(name "RX422"
 						(effects
@@ -11744,7 +11744,7 @@
 		(pin "F21"
 			(uuid "888b783a-c561-476d-ad84-4f723a982c07")
 		)
-		(pin "M20"
+		(pin "M3"
 			(uuid "6dbf098e-d7da-4639-8b60-3aae8b035246")
 		)
 		(pin "V18"
@@ -11794,9 +11794,6 @@
 		)
 		(pin "H22"
 			(uuid "0c7bad93-fc4e-45a4-bb29-59e925e90dbe")
-		)
-		(pin "M19"
-			(uuid "47d6a218-e886-48ff-9f3b-94f1f18502bd")
 		)
 		(pin "Y8"
 			(uuid "fad40ed6-d4fd-4809-a936-c597a9c86061")
@@ -12253,6 +12250,9 @@
 		)
 		(pin "W21"
 			(uuid "a86050bf-ec7b-4c58-8693-93e1c7b01435")
+		)
+		(pin "M7"
+			(uuid "aca2ba9c-3ba8-43a5-9fa8-1923236da7f7")
 		)
 		(instances
 			(project "MPU"
@@ -13171,11 +13171,8 @@
 		(pin "M16"
 			(uuid "f5abef74-1b10-4634-98bc-87af1b3032cf")
 		)
-		(pin "M19"
+		(pin "M3"
 			(uuid "ea18feee-afb7-46ea-bcf0-6d0ebd3cb945")
-		)
-		(pin "M20"
-			(uuid "ca941c2f-fca2-4603-aaa2-caf57f81cba5")
 		)
 		(pin "M21"
 			(uuid "209cc4a7-610e-4b8c-87e9-c6cd41386d05")
@@ -13797,6 +13794,9 @@
 		)
 		(pin "W21"
 			(uuid "3f8d9efd-3967-4a43-acc9-15b218b0ca8e")
+		)
+		(pin "M7"
+			(uuid "45db0a83-db77-4e5e-8c8f-4a9ab27cfa6f")
 		)
 		(instances
 			(project "MPU"
