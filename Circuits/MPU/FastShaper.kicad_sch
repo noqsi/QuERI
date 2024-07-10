@@ -3614,7 +3614,7 @@
 				)
 			)
 		)
-		(property "Value" "1.0k"
+		(property "Value" "4.99"
 			(at 77.47 129.54 90)
 			(effects
 				(font
@@ -5899,7 +5899,7 @@
 				)
 			)
 		)
-		(property "Value" "1.0k"
+		(property "Value" "4.99"
 			(at 118.11 129.54 90)
 			(effects
 				(font
