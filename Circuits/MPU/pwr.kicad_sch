@@ -17002,7 +17002,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "10uF"
 			(at 109.22 129.5399 0)
 			(effects
 				(font
@@ -17038,7 +17038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 105.41 128.27 0)
 			(effects
 				(font
@@ -18614,7 +18614,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "10uF"
 			(at 113.03 167.6399 0)
 			(effects
 				(font
@@ -18650,7 +18650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 109.22 166.37 0)
 			(effects
 				(font
@@ -21692,7 +21692,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "10uF"
 			(at 113.03 191.7699 0)
 			(effects
 				(font
@@ -21728,7 +21728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Spec" "16WVDC X7R"
+		(property "Spec" "50WVDC X7R"
 			(at 109.22 190.5 0)
 			(effects
 				(font
