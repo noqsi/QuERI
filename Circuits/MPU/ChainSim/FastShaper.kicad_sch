@@ -2064,7 +2064,6 @@
 	(hierarchical_label "UNIPOLAR"
 		(shape input)
 		(at 204.47 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2076,7 +2075,6 @@
 	(hierarchical_label "IN"
 		(shape input)
 		(at 41.91 68.58 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2088,7 +2086,6 @@
 	(hierarchical_label "BIPOLAR"
 		(shape input)
 		(at 205.74 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
