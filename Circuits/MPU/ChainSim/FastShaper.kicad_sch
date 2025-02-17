@@ -2156,7 +2156,25 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=A 2=K"
+			(at 69.85 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "1N914B.mod"
+			(at 69.85 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "FDLL914B"
 			(at 69.85 78.74 0)
 			(effects
 				(font
@@ -3382,7 +3400,25 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=A 2=K"
+			(at 59.69 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "1N914B.mod"
+			(at 59.69 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "FDLL914B"
 			(at 59.69 78.74 0)
 			(effects
 				(font
