@@ -2426,6 +2426,7 @@
 	(hierarchical_label "TRIG"
 		(shape input)
 		(at 138.43 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2437,6 +2438,7 @@
 	(hierarchical_label "CNV"
 		(shape input)
 		(at 201.93 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2448,6 +2450,7 @@
 	(hierarchical_label "+2.5V"
 		(shape input)
 		(at 187.96 54.61 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2459,6 +2462,7 @@
 	(hierarchical_label "UNIPOLAR"
 		(shape input)
 		(at 90.17 82.55 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2470,6 +2474,7 @@
 	(hierarchical_label "BIPOLAR"
 		(shape input)
 		(at 177.8 118.11 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2481,6 +2486,7 @@
 	(hierarchical_label "SDO"
 		(shape input)
 		(at 201.93 87.63 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2492,6 +2498,7 @@
 	(hierarchical_label "SCK"
 		(shape input)
 		(at 201.93 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2503,6 +2510,7 @@
 	(hierarchical_label "ZX"
 		(shape input)
 		(at 203.2 120.65 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2514,6 +2522,7 @@
 	(hierarchical_label "LLD"
 		(shape input)
 		(at 115.57 60.96 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

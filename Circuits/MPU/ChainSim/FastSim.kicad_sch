@@ -2274,6 +2274,12 @@
 		(uuid "2248402a-1ee2-4a01-800d-cf59d3ce871a")
 	)
 	(junction
+		(at 82.55 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d882ef3-eea0-4d7c-85dd-8cadcfe073fe")
+	)
+	(junction
 		(at 102.87 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2297,6 +2303,12 @@
 		(color 0 0 0 0)
 		(uuid "ac9811e2-8d0a-47f7-b91d-f498be871ac1")
 	)
+	(junction
+		(at 48.26 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2ecb93c-9fff-4f4c-b867-f7d6b193b350")
+	)
 	(wire
 		(pts
 			(xy 102.87 40.64) (xy 102.87 44.45)
@@ -2316,6 +2328,16 @@
 			(type default)
 		)
 		(uuid "0453901f-cb15-496e-89f9-ddb15f2e6697")
+	)
+	(wire
+		(pts
+			(xy 48.26 39.37) (xy 48.26 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0f6780-98c0-4437-ad41-59fd53312bac")
 	)
 	(wire
 		(pts
@@ -2379,6 +2401,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 167.64) (xy 93.98 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c6da085-9d10-432f-bac7-76bb28e4e746")
+	)
+	(wire
+		(pts
 			(xy 124.46 82.55) (xy 124.46 87.63)
 		)
 		(stroke
@@ -2439,6 +2471,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 39.37) (xy 48.26 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59385350-8d04-4949-bf2b-aac7fe1c00c0")
+	)
+	(wire
+		(pts
 			(xy 72.39 134.62) (xy 85.09 134.62)
 		)
 		(stroke
@@ -2466,6 +2508,16 @@
 			(type default)
 		)
 		(uuid "73b8a211-26ba-4bd9-9f2a-39c1e4dd73ac")
+	)
+	(wire
+		(pts
+			(xy 48.26 44.45) (xy 66.04 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ef68dc5-e450-42c6-977b-3a83876e25cc")
 	)
 	(wire
 		(pts
@@ -2529,7 +2581,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 44.45) (xy 66.04 44.45)
+			(xy 40.64 44.45) (xy 48.26 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2559,7 +2611,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 46.99) (xy 86.36 46.99)
+			(xy 82.55 29.21) (xy 82.55 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb4a3b45-a107-44a2-afcb-5d17f1fc312f")
+	)
+	(wire
+		(pts
+			(xy 81.28 46.99) (xy 82.55 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2576,6 +2638,16 @@
 			(type default)
 		)
 		(uuid "c60c5352-97b7-4188-b60d-0ad596c30ae4")
+	)
+	(wire
+		(pts
+			(xy 86.36 29.21) (xy 82.55 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caa127c6-50f8-411d-b5d5-44525cef6d02")
 	)
 	(wire
 		(pts
@@ -2639,6 +2711,26 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 46.99) (xy 86.36 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8e249b4-8547-4e39-a5d7-565d0a6367eb")
+	)
+	(wire
+		(pts
+			(xy 93.98 167.64) (xy 93.98 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa48ea43-18c8-4b6e-a603-caac00e043a7")
+	)
+	(wire
+		(pts
 			(xy 99.06 44.45) (xy 102.87 44.45)
 		)
 		(stroke
@@ -2670,6 +2762,28 @@
 		(uuid "3825f380-a936-426d-8fa8-bb8850d590a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 109.5443 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BUF"
+		(shape output)
+		(at 86.36 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5b9e6807-77d3-4530-b1ed-74ddd5421d82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 93.0343 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2789,6 +2903,28 @@
 			)
 		)
 	)
+	(global_label "IN"
+		(shape output)
+		(at 50.8 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d8fde649-1265-4f89-954d-f15fb4ccb7ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.7205 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "QuERI_symbols:C")
 		(at 85.09 138.43 0)
@@ -2863,6 +2999,104 @@
 			(project "FastSim"
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VDC")
+		(at 93.98 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10559389-9765-444e-a96c-037ef932d4db")
+		(property "Reference" "V3"
+			(at 97.79 172.5901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "-5V"
+			(at 97.79 175.1301 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 93.98 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 93.98 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 93.98 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 93.98 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 93.98 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9b2fbdc-f284-497c-af47-f867874f4146")
+		)
+		(pin "2"
+			(uuid "ea052921-b6dd-48ce-b2fc-431d250358bc")
+		)
+		(instances
+			(project "FastSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a"
+					(reference "V3")
 					(unit 1)
 				)
 			)
@@ -3257,6 +3491,72 @@
 			(project "ChainSim"
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a"
 					(reference "V7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-5V")
+		(at 102.87 167.64 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "433c6165-3cbf-4506-9c33-17e984e01ecb")
+		(property "Reference" "#PWR035"
+			(at 102.87 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-5V"
+			(at 102.87 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-5V\""
+			(at 102.87 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92afaa33-82c0-4702-85a9-c71dcaa3933f")
+		)
+		(instances
+			(project "FastSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -3764,6 +4064,72 @@
 			(project "ChainSim"
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.98 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c562e8a-9ef1-40de-ae07-801ac7eb1165")
+		(property "Reference" "#PWR04"
+			(at 93.98 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.98 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 93.98 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "189cff7d-9c49-4769-8b37-3c02b184bc8a")
+		)
+		(instances
+			(project "FastSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5169,7 +5535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "pwl=\"0 0 1u 0 1.01u 200m\""
+		(property "Sim.Params" "pwl=\"0 0 0.1u 0 0.11u 200m\""
 			(at 14.732 32.258 0)
 			(effects
 				(font
