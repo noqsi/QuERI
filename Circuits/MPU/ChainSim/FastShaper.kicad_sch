@@ -3299,7 +3299,7 @@
 				)
 			)
 		)
-		(property "Value" "11pF"
+		(property "Value" "47pF"
 			(at 175.26 76.2 90)
 			(effects
 				(font
@@ -3765,7 +3765,7 @@
 				)
 			)
 		)
-		(property "Value" "499"
+		(property "Value" "232"
 			(at 116.84 62.23 90)
 			(effects
 				(font
@@ -4223,7 +4223,7 @@
 				)
 			)
 		)
-		(property "Value" "68pF"
+		(property "Value" "360pF"
 			(at 190.5 127 90)
 			(effects
 				(font
@@ -4562,7 +4562,7 @@
 				)
 			)
 		)
-		(property "Value" "11pF"
+		(property "Value" "47pF"
 			(at 165.1 115.57 90)
 			(effects
 				(font
@@ -4649,7 +4649,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "150"
 			(at 71.12 64.77 90)
 			(effects
 				(font
@@ -4736,7 +4736,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "150"
 			(at 50.8 64.77 90)
 			(effects
 				(font
@@ -5455,7 +5455,7 @@
 				)
 			)
 		)
-		(property "Value" "1.0k"
+		(property "Value" "301"
 			(at 116.84 73.66 90)
 			(effects
 				(font
@@ -5629,7 +5629,7 @@
 				)
 			)
 		)
-		(property "Value" "150"
+		(property "Value" "22.1"
 			(at 140.97 104.14 90)
 			(effects
 				(font
@@ -5957,7 +5957,7 @@
 				)
 			)
 		)
-		(property "Value" "200pF"
+		(property "Value" "560pF"
 			(at 200.66 87.63 90)
 			(effects
 				(font
@@ -6044,7 +6044,7 @@
 				)
 			)
 		)
-		(property "Value" "300pF"
+		(property "Value" "160pF"
 			(at 149.86 102.87 90)
 			(effects
 				(font
@@ -6504,7 +6504,7 @@
 				)
 			)
 		)
-		(property "Value" "130pF"
+		(property "Value" "510pF"
 			(at 109.22 87.63 90)
 			(effects
 				(font
@@ -6678,7 +6678,7 @@
 				)
 			)
 		)
-		(property "Value" "20pF"
+		(property "Value" "75pF"
 			(at 81.28 74.93 90)
 			(effects
 				(font
@@ -6765,7 +6765,7 @@
 				)
 			)
 		)
-		(property "Value" "62pF"
+		(property "Value" "180pF"
 			(at 58.42 63.5 90)
 			(effects
 				(font
