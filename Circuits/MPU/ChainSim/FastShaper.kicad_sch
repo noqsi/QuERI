@@ -1354,6 +1354,12 @@
 		(uuid "9b37995d-9651-405a-b985-63971c65f06c")
 	)
 	(junction
+		(at 142.24 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4351439-d1ef-47f4-b746-ae265d39ba2e")
+	)
+	(junction
 		(at 120.65 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1370,6 +1376,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e21674d3-28c8-465a-a3cc-e89c313505cf")
+	)
+	(junction
+		(at 109.22 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5e3278f-25ce-4a7f-bcba-5e52841e87a3")
 	)
 	(wire
 		(pts
@@ -1423,6 +1435,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 68.58) (xy 154.94 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1308e33e-fa54-4b78-a211-f89fcca804e7")
+	)
+	(wire
+		(pts
 			(xy 165.1 49.53) (xy 165.1 50.8)
 		)
 		(stroke
@@ -1433,7 +1455,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 68.58) (xy 154.94 68.58)
+			(xy 137.16 68.58) (xy 142.24 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1600,6 +1622,16 @@
 			(type default)
 		)
 		(uuid "55b70480-e054-47ed-9192-c828f3873454")
+	)
+	(wire
+		(pts
+			(xy 109.22 66.04) (xy 113.03 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56645845-31ff-4530-82d5-1b9eeb37f471")
 	)
 	(wire
 		(pts
@@ -1883,7 +1915,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 66.04) (xy 113.03 66.04)
+			(xy 105.41 66.04) (xy 109.22 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1910,6 +1942,36 @@
 			(type default)
 		)
 		(uuid "b6bf9d1d-de2d-422c-a80a-6d74a4d438c5")
+	)
+	(wire
+		(pts
+			(xy 109.22 55.88) (xy 109.22 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be9032f7-d4cf-4d4a-93f3-7831aa998c7e")
+	)
+	(wire
+		(pts
+			(xy 110.49 55.88) (xy 109.22 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0059ca0-dbd1-4599-be6c-3b1ccbe81507")
+	)
+	(wire
+		(pts
+			(xy 143.51 55.88) (xy 142.24 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c42f6ba5-9579-4133-b502-d169a7dcf16f")
 	)
 	(wire
 		(pts
@@ -1940,6 +2002,16 @@
 			(type default)
 		)
 		(uuid "c93529fd-27a3-419d-88f2-d5ded099d0d0")
+	)
+	(wire
+		(pts
+			(xy 142.24 55.88) (xy 142.24 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb80e01b-079b-4ea3-a05d-2230041295a8")
 	)
 	(wire
 		(pts
@@ -2061,6 +2133,50 @@
 		)
 		(uuid "fb528f91-621f-44fd-bfff-b3fe02c78078")
 	)
+	(global_label "V1"
+		(shape input)
+		(at 110.49 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0dbec7d8-f425-48d3-9680-ae82acff3ec3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.7733 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V2"
+		(shape input)
+		(at 143.51 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f50992e-bf76-4896-9f0d-f25364cb569e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.7933 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "UNIPOLAR"
 		(shape input)
 		(at 204.47 66.04 0)
@@ -2159,7 +2275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=A 2=K"
+		(property "Sim.Pins" "1=K 2=A"
 			(at 69.85 78.74 0)
 			(effects
 				(font
@@ -3403,7 +3519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=A 2=K"
+		(property "Sim.Pins" "1=K 2=A"
 			(at 59.69 78.74 0)
 			(effects
 				(font
@@ -3944,7 +4060,7 @@
 				)
 			)
 		)
-		(property "Value" "1.0k"
+		(property "Value" "4.99"
 			(at 77.47 129.54 90)
 			(effects
 				(font
@@ -6475,7 +6591,7 @@
 				)
 			)
 		)
-		(property "Value" "1.0k"
+		(property "Value" "4.99"
 			(at 118.11 129.54 90)
 			(effects
 				(font
