@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "a41cd8ea-8972-4341-9386-1f5317ef994d")
 	(paper "USLetter")
 	(title_block
@@ -89,7 +89,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -101,7 +101,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -115,7 +115,8 @@
 			(symbol "+2.5F_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+2.5F"
 						(effects
 							(font
@@ -132,6 +133,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:AD7984BRMZ"
 			(pin_names
@@ -215,60 +217,6 @@
 					)
 				)
 				(pin input line
-					(at -2.54 10.16 270)
-					(length 2.54)
-					(name "REF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 10.16 270)
-					(length 2.54)
-					(name "VIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at -15.24 2.54 0)
 					(length 5.08)
 					(name "IN+"
@@ -304,6 +252,42 @@
 						)
 					)
 				)
+				(pin input line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "REF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
@@ -322,17 +306,53 @@
 						)
 					)
 				)
-				(pin input line
-					(at 12.7 -2.54 180)
+				(pin power_in line
+					(at 2.54 10.16 270)
 					(length 2.54)
-					(name "CNV"
+					(name "VIO"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -359,34 +379,16 @@
 					)
 				)
 				(pin input line
-					(at 12.7 2.54 180)
+					(at 12.7 -2.54 180)
 					(length 2.54)
-					(name "SCK"
+					(name "CNV"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "SDI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -395,6 +397,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:ADA4805-2ARMZ"
 			(pin_names
@@ -523,17 +526,17 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -559,17 +562,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "+"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -648,24 +651,6 @@
 			)
 			(symbol "ADA4805-2ARMZ_3_1"
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -683,10 +668,31 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -768,7 +774,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -780,7 +786,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -829,9 +835,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:Csmall"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -913,7 +922,7 @@
 			(symbol "Csmall_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -925,7 +934,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -974,6 +983,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:LT1715"
 			(pin_names
@@ -1193,24 +1203,6 @@
 					)
 				)
 				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "+"
@@ -1221,6 +1213,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1285,24 +1295,6 @@
 					)
 				)
 				(pin power_in line
-					(at 1.27 -7.62 90)
-					(length 3.81)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at 1.27 8.89 270)
 					(length 3.81)
 					(name "+VS"
@@ -1320,10 +1312,31 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 1.27 -7.62 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:Rlowp"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1451,12 +1464,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1528,7 +1546,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1540,7 +1558,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1571,12 +1589,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1648,7 +1671,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1660,7 +1683,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1691,12 +1714,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1787,6 +1815,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -2426,7 +2455,6 @@
 	(hierarchical_label "TRIG"
 		(shape input)
 		(at 138.43 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2438,7 +2466,6 @@
 	(hierarchical_label "CNV"
 		(shape input)
 		(at 201.93 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2450,7 +2477,6 @@
 	(hierarchical_label "+2.5V"
 		(shape input)
 		(at 187.96 54.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2462,7 +2488,6 @@
 	(hierarchical_label "UNIPOLAR"
 		(shape input)
 		(at 90.17 82.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2474,7 +2499,6 @@
 	(hierarchical_label "BIPOLAR"
 		(shape input)
 		(at 177.8 118.11 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2486,7 +2510,6 @@
 	(hierarchical_label "SDO"
 		(shape input)
 		(at 201.93 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2498,7 +2521,6 @@
 	(hierarchical_label "SCK"
 		(shape input)
 		(at 201.93 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2510,7 +2532,6 @@
 	(hierarchical_label "ZX"
 		(shape input)
 		(at 203.2 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2522,7 +2543,6 @@
 	(hierarchical_label "LLD"
 		(shape input)
 		(at 115.57 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2589,7 +2609,11 @@
 			(uuid "72b5ee08-8745-4718-aec0-aa63d9deb292")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR053")
 					(unit 1)
@@ -2686,7 +2710,11 @@
 			(uuid "22840fd1-7123-42be-a68e-14847b091ba1")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C33")
 					(unit 1)
@@ -2781,7 +2809,11 @@
 			(uuid "d5b4b46d-cc66-42f9-845c-28630751b000")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C30")
 					(unit 1)
@@ -2921,7 +2953,11 @@
 			(uuid "df6f5d56-c0d8-4f2b-bf6c-fabfc6ad2c48")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "U?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "U8")
 					(unit 2)
@@ -3018,7 +3054,11 @@
 			(uuid "eacb126d-5b57-451d-8637-da0d0a665a32")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C27")
 					(unit 1)
@@ -3115,7 +3155,11 @@
 			(uuid "fab7c3df-d8cd-4860-ab71-40a7b2a70469")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C34")
 					(unit 1)
@@ -3210,7 +3254,11 @@
 			(uuid "5cc16532-e380-4afe-a5de-e9ea24a3f3b2")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R45")
 					(unit 1)
@@ -3294,7 +3342,11 @@
 			(uuid "097335e2-ccdd-44d7-a299-740aa6c58b4c")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR064")
 					(unit 1)
@@ -3378,7 +3430,11 @@
 			(uuid "ced45877-6849-4434-a1d2-920bc9bf9732")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR052")
 					(unit 1)
@@ -3520,7 +3576,11 @@
 			(uuid "df6f5d56-c0d8-4f2b-bf6c-fabfc6ad2c4a")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "U?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "U8")
 					(unit 3)
@@ -3615,7 +3675,11 @@
 			(uuid "5545007d-1df6-42ed-bfda-46d20eecf7d0")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C28")
 					(unit 1)
@@ -3699,7 +3763,11 @@
 			(uuid "f3a7bceb-f0f6-4aed-8a03-83838d80c744")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR055")
 					(unit 1)
@@ -3783,7 +3851,11 @@
 			(uuid "cd6a42f9-d305-4af4-aefe-21210061283f")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR070")
 					(unit 1)
@@ -3923,7 +3995,11 @@
 			(uuid "99a4191e-d39e-4c55-8a5e-d4e9ee978bc9")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "U?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "U8")
 					(unit 1)
@@ -4018,7 +4094,11 @@
 			(uuid "b30de35c-c4b2-4707-b49f-91b76d56cf1b")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R42")
 					(unit 1)
@@ -4102,7 +4182,11 @@
 			(uuid "7904438c-b77d-4b7a-80d9-982eb035850b")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR051")
 					(unit 1)
@@ -4197,7 +4281,11 @@
 			(uuid "6486056f-a138-47d2-a739-393158a00925")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R44")
 					(unit 1)
@@ -4281,7 +4369,11 @@
 			(uuid "2d0927b3-5151-4424-82c7-64c84b5b3cdb")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR066")
 					(unit 1)
@@ -4365,7 +4457,11 @@
 			(uuid "f4afa0c6-9cd2-4806-9758-0c39e19f7453")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR062")
 					(unit 1)
@@ -4449,7 +4545,11 @@
 			(uuid "049f59f8-6ddb-485d-837e-579ced5dfdd1")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR069")
 					(unit 1)
@@ -4533,7 +4633,11 @@
 			(uuid "12f439fe-d26b-4f01-b953-9124b76ff597")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR061")
 					(unit 1)
@@ -4630,7 +4734,11 @@
 			(uuid "dc238449-f6ff-4adc-a5ab-ad65fce4327d")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R47")
 					(unit 1)
@@ -4725,7 +4833,11 @@
 			(uuid "cad9f429-52e4-4ce1-ac34-cb793ca1c522")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R46")
 					(unit 1)
@@ -4809,7 +4921,11 @@
 			(uuid "443fa9cf-d4da-4ac2-a7ce-bce8a48cbc8b")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR058")
 					(unit 1)
@@ -4906,7 +5022,11 @@
 			(uuid "3be7514f-1387-43c7-a32b-6ad1af4faf3b")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C26")
 					(unit 1)
@@ -5003,7 +5123,11 @@
 			(uuid "bfda7ab9-cf32-41cb-9d59-01c00aa3406b")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C25")
 					(unit 1)
@@ -5149,7 +5273,11 @@
 			(uuid "01622db3-95ec-40d0-b784-43550691a665")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "U?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "U7")
 					(unit 1)
@@ -5233,7 +5361,11 @@
 			(uuid "640a33b3-f220-4219-81de-cc15962081d9")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR059")
 					(unit 1)
@@ -5330,7 +5462,11 @@
 			(uuid "00803195-5185-4705-b38c-f1b419044522")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C32")
 					(unit 1)
@@ -5414,7 +5550,11 @@
 			(uuid "a7edc5a5-c235-461f-ad88-4dc79bd9ff4a")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR068")
 					(unit 1)
@@ -5509,7 +5649,11 @@
 			(uuid "e9a7f7a5-238c-4b6e-8bed-5d2440abeba8")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C29")
 					(unit 1)
@@ -5606,7 +5750,11 @@
 			(uuid "d9289c9f-eb54-449c-98df-6b602a4cdd22")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "C?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "C31")
 					(unit 1)
@@ -5703,7 +5851,11 @@
 			(uuid "f8b6235f-1ac3-411b-a7f9-6f7d9cb0ebd8")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R49")
 					(unit 1)
@@ -5787,7 +5939,11 @@
 			(uuid "d5fcb778-56dd-401d-a523-295b6f91b230")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR065")
 					(unit 1)
@@ -5884,7 +6040,11 @@
 			(uuid "d1b54ed1-5929-49fc-ac58-6ed79b8d5f81")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R39")
 					(unit 1)
@@ -5979,7 +6139,11 @@
 			(uuid "92290e61-04b4-489d-8695-aaca949cf013")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R41")
 					(unit 1)
@@ -6076,7 +6240,11 @@
 			(uuid "381ccb11-ee0e-4956-81e8-8109aa2a2702")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R40")
 					(unit 1)
@@ -6188,7 +6356,11 @@
 			(uuid "813a4a15-3c17-4008-babd-b3aa15b3d8fb")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "U?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "U9")
 					(unit 1)
@@ -6272,7 +6444,11 @@
 			(uuid "7da40880-aa3d-4a5c-81ec-d08d2f30bad9")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR060")
 					(unit 1)
@@ -6367,7 +6543,11 @@
 			(uuid "ffcdf09b-3455-494d-a681-652cac43cc76")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R43")
 					(unit 1)
@@ -6451,7 +6631,11 @@
 			(uuid "45e51b78-98da-4ab4-95da-63c3715d65c7")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR056")
 					(unit 1)
@@ -6535,7 +6719,11 @@
 			(uuid "96a6b9d4-bd8d-4acd-ba95-16d5e202cec0")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR067")
 					(unit 1)
@@ -6619,7 +6807,11 @@
 			(uuid "11b06c64-772d-474f-b071-821fc216520e")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR063")
 					(unit 1)
@@ -6703,7 +6895,11 @@
 			(uuid "c599c621-a2f6-4c86-a8da-9586cfe3c53b")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR057")
 					(unit 1)
@@ -6849,7 +7045,11 @@
 			(uuid "4bff8401-aca4-4a8a-80f1-67a0e57beec1")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "U?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "U7")
 					(unit 2)
@@ -6997,7 +7197,11 @@
 			(uuid "4bff8401-aca4-4a8a-80f1-67a0e57beec2")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "U?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "U7")
 					(unit 3)
@@ -7092,7 +7296,11 @@
 			(uuid "50b51b94-ef81-4647-976c-7b995ccac422")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "R48")
 					(unit 1)
@@ -7176,7 +7384,11 @@
 			(uuid "c276a10d-706f-4380-9b4e-4013c1d1dcf7")
 		)
 		(instances
-			(project ""
+			(project "ChainSim"
+				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/70b91765-bcf1-4475-a23e-137d93006c42"
+					(reference "#PWR?")
+					(unit 1)
+				)
 				(path "/661b0de0-7ec5-4ab2-b476-b1fd467a948a/86e9e8ee-4d23-4721-9304-46d271d7d0b4"
 					(reference "#PWR054")
 					(unit 1)
