@@ -1,0 +1,6 @@
+*.csv
+*.numbers
+*.pdf
+*-backups
+sym-lib-table
+*bak
