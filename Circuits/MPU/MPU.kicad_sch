@@ -22740,7 +22740,7 @@
 				(justify right)
 			)
 		)
-		(pin "HVDAC" input
+		(pin "HVCLK" input
 			(at 87.63 114.3 0)
 			(uuid "c8c433df-d3f3-42eb-8fa4-41b9e98cfeaf")
 			(effects
@@ -23265,7 +23265,7 @@
 				(justify left)
 			)
 		)
-		(pin "HVDAC-1" input
+		(pin "HVCLK-1" input
 			(at 106.68 106.68 270)
 			(uuid "b86ed867-1b59-40ae-8176-b80f5670b893")
 			(effects
@@ -23305,7 +23305,7 @@
 				(justify right)
 			)
 		)
-		(pin "HVDAC-0" input
+		(pin "HVCLK-0" input
 			(at 118.11 80.01 90)
 			(uuid "141a08f0-8417-4f5b-9aba-0d7d5d838818")
 			(effects
@@ -23666,7 +23666,7 @@
 				(justify right)
 			)
 		)
-		(pin "HVDAC" input
+		(pin "HVCLK" input
 			(at 87.63 38.1 0)
 			(uuid "89eae6fd-183a-443b-bc4f-49592ac67003")
 			(effects
