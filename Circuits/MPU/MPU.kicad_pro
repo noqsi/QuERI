@@ -289,6 +289,7 @@
         "wire_width": 6
       },
       {
+        "line_style": 0,
         "name": "LowCapacitance",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
@@ -307,6 +308,15 @@
       "Net-(C9-Pad1)": [
         "LowCapacitance"
       ],
+      "Net-(D10-A)": [
+        "LowCapacitance"
+      ],
+      "Net-(D11-common)": [
+        "LowCapacitance"
+      ],
+      "Net-(D12-common)": [
+        "LowCapacitance"
+      ],
       "Net-(D3-common)": [
         "LowCapacitance"
       ],
@@ -323,6 +333,9 @@
         "LowCapacitance"
       ],
       "Net-(D8-common)": [
+        "LowCapacitance"
+      ],
+      "Net-(D9-A)": [
         "LowCapacitance"
       ],
       "Net-(Q2-C)": [
@@ -344,12 +357,7 @@
         "LowCapacitance"
       ]
     },
-    "netclass_patterns": [
-      {
-        "netclass": "Default",
-        "pattern": "-5raw"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
