@@ -6006,7 +6006,7 @@
 			(fill
 				(type none)
 			)
-			(uuid f73b3266-a6e1-4f9d-bee3-e70c6b97d62e)
+			(uuid 185cc941-107a-47ac-8ed1-dc1efb24c5f5)
 		)
 	)
 	(netclass_flag ""
@@ -8907,7 +8907,7 @@
 				)
 			)
 		)
-		(property "Value" "BZD27C150P-HE3-08"
+		(property "Value" "UDZLVFHTE-1791"
 			(at 135.636 139.192 0)
 			(effects
 				(font
@@ -8915,7 +8915,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-323F"
 			(at 143.51 135.89 0)
 			(effects
 				(font
