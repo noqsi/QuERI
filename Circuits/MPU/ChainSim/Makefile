@@ -9,3 +9,8 @@ FastSim : FastSim.cir
 
 FastSim.cir : FastShaper.kicad_sch PulseCapture.kicad_sch
 
+ChainSim : ChainSim.cir
+	ngspice ChainSim.cir
+
+ChainSim.cir : FastShaper.kicad_sch SlowShaper.kicad_sch PulseCapture.kicad_sch
+

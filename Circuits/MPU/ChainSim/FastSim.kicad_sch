@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "661b0de0-7ec5-4ab2-b476-b1fd467a948a")
 	(paper "USLetter")
 	(title_block
@@ -104,17 +104,17 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -140,17 +140,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "+"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -229,24 +229,6 @@
 			)
 			(symbol "ADA4805-2ARMZ_5_3_1"
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -264,7 +246,26 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "ADA4805-2ARMZ_9"
 			(pin_names
@@ -357,17 +358,17 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -393,17 +394,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "+"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -482,24 +483,6 @@
 			)
 			(symbol "ADA4805-2ARMZ_9_3_1"
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -517,7 +500,26 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:+2.5F"
 			(power)
@@ -595,7 +597,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -607,7 +609,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -621,7 +623,8 @@
 			(symbol "+2.5F_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+2.5F"
 						(effects
 							(font
@@ -638,6 +641,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:ADA4805-2ARMZ"
 			(pin_names
@@ -766,17 +770,17 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -802,17 +806,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "+"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -891,24 +895,6 @@
 			)
 			(symbol "ADA4805-2ARMZ_3_1"
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -926,10 +912,31 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -1011,7 +1018,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1023,7 +1030,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1072,9 +1079,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:Rlowp"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1202,6 +1212,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:VFS"
 			(power)
@@ -1279,7 +1290,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1291,7 +1302,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1305,7 +1316,8 @@
 			(symbol "VFS_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+2.5F"
 						(effects
 							(font
@@ -1322,6 +1334,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "QuERI_symbols:VHS"
 			(power)
@@ -1399,7 +1412,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1411,7 +1424,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1425,7 +1438,8 @@
 			(symbol "VHS_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+2.5F"
 						(effects
 							(font
@@ -1442,9 +1456,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Simulation_SPICE:VDC"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.0254)
 			)
@@ -1642,9 +1659,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Simulation_SPICE:VPWL"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.0254)
 			)
@@ -1815,12 +1835,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1892,7 +1917,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1904,7 +1929,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1935,12 +1960,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2012,7 +2042,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2024,7 +2054,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2055,12 +2085,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:-5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2151,12 +2186,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2247,7 +2287,18 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text ".options gmin=1e-9\n.options abstol=1e-9\n.options reltol=0.1\n.options vntol=1e-4\n.tran 1n 1u"
+		(exclude_from_sim no)
+		(at 204.216 30.226 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "53f4700a-b066-46c2-b035-289a2fcf03e6")
 	)
 	(junction
 		(at 133.35 45.72)
@@ -2738,16 +2789,6 @@
 			(type default)
 		)
 		(uuid "ffb0e11c-d670-46f4-9c73-ee7912885f69")
-	)
-	(text ".options gmin=1e-9\n.options abstol=1e-9\n.options reltol=0.1\n.options vntol=1e-4\n.tran 1n 1u"
-		(exclude_from_sim no)
-		(at 204.216 30.226 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "53f4700a-b066-46c2-b035-289a2fcf03e6")
 	)
 	(global_label "FU"
 		(shape output)
@@ -5735,6 +5776,10 @@
 	(sheet
 		(at 113.03 40.64)
 		(size 17.78 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5764,93 +5809,93 @@
 		)
 		(pin "UNIPOLAR" input
 			(at 113.03 49.53 180)
+			(uuid "ac8bc8f9-42ec-4d11-808d-8e428213a40e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ac8bc8f9-42ec-4d11-808d-8e428213a40e")
 		)
 		(pin "BIPOLAR" input
 			(at 113.03 44.45 180)
+			(uuid "4a9937e1-b2cd-4dc8-b35a-3617758ee675")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4a9937e1-b2cd-4dc8-b35a-3617758ee675")
 		)
 		(pin "SCK" input
 			(at 130.81 43.18 0)
+			(uuid "31a5b89e-544b-4738-8877-a06cf8cdca05")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "31a5b89e-544b-4738-8877-a06cf8cdca05")
 		)
 		(pin "SDO" input
 			(at 130.81 45.72 0)
+			(uuid "93fac946-d700-466e-ae92-ac5dfe406be3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "93fac946-d700-466e-ae92-ac5dfe406be3")
 		)
 		(pin "CNV" input
 			(at 130.81 48.26 0)
+			(uuid "b03b051e-5d05-4e71-bcc2-2585a3a5f904")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b03b051e-5d05-4e71-bcc2-2585a3a5f904")
 		)
 		(pin "TRIG" input
 			(at 130.81 50.8 0)
+			(uuid "f5c94d24-81af-45d9-a1c1-b60bb2cf5a69")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f5c94d24-81af-45d9-a1c1-b60bb2cf5a69")
 		)
 		(pin "ZX" input
 			(at 130.81 53.34 0)
+			(uuid "34e62eab-f3e6-42b4-9e5b-dbf5c6976a58")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "34e62eab-f3e6-42b4-9e5b-dbf5c6976a58")
 		)
 		(pin "+2.5V" input
 			(at 130.81 55.88 0)
+			(uuid "e53c9eb0-4dbd-4fac-aa5a-efc8709a5152")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e53c9eb0-4dbd-4fac-aa5a-efc8709a5152")
 		)
 		(pin "LLD" input
 			(at 113.03 55.88 180)
+			(uuid "c5c3260a-d8ff-4d2e-aedb-6432bfb2802c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c5c3260a-d8ff-4d2e-aedb-6432bfb2802c")
 		)
 		(instances
 			(project "MPU"
@@ -5871,6 +5916,10 @@
 	(sheet
 		(at 86.36 41.91)
 		(size 12.7 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5900,33 +5949,33 @@
 		)
 		(pin "IN" input
 			(at 86.36 46.99 180)
+			(uuid "738fcf50-c54d-4506-8ce1-576eb3c83ca1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "738fcf50-c54d-4506-8ce1-576eb3c83ca1")
 		)
 		(pin "BIPOLAR" input
 			(at 99.06 44.45 0)
+			(uuid "fdf75399-4332-4d5c-854f-08de306aa071")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fdf75399-4332-4d5c-854f-08de306aa071")
 		)
 		(pin "UNIPOLAR" input
 			(at 99.06 49.53 0)
+			(uuid "bbd696b2-a701-446b-a267-ccf29ecc3306")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bbd696b2-a701-446b-a267-ccf29ecc3306")
 		)
 		(instances
 			(project "MPU"
@@ -5949,4 +5998,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
