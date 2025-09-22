@@ -8818,16 +8818,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 60.96) (xy 151.13 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1abdc67e-9891-4906-8afe-de4abc9fae40")
-	)
-	(wire
-		(pts
 			(xy 228.6 58.42) (xy 228.6 31.75)
 		)
 		(stroke
@@ -9078,16 +9068,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 50.8) (xy 153.67 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e551ee9-2d71-450e-8990-0a3ee853c428")
-	)
-	(wire
-		(pts
 			(xy 147.32 36.83) (xy 153.67 36.83)
 		)
 		(stroke
@@ -9138,16 +9118,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 60.96) (xy 151.13 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4393adae-afcb-4516-acc7-3deb738b5ce4")
-	)
-	(wire
-		(pts
 			(xy 78.74 143.51) (xy 78.74 153.67)
 		)
 		(stroke
@@ -9175,16 +9145,6 @@
 			(type default)
 		)
 		(uuid "45b65ba8-c425-4d6e-b7a7-37945bc84931")
-	)
-	(wire
-		(pts
-			(xy 147.32 66.04) (xy 153.67 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bd23c71-423e-47c6-874c-f06053ee9ad3")
 	)
 	(wire
 		(pts
@@ -9448,16 +9408,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 63.5) (xy 153.67 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "690bef47-2ca8-45c6-9cc1-fb6899cdd8e7")
-	)
-	(wire
-		(pts
 			(xy 147.32 107.95) (xy 157.48 107.95)
 		)
 		(stroke
@@ -9668,16 +9618,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 55.88) (xy 153.67 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f682408-1b73-4fb1-b15e-42f409471f0b")
-	)
-	(wire
-		(pts
 			(xy 87.63 109.22) (xy 101.6 109.22)
 		)
 		(stroke
@@ -9828,16 +9768,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 58.42) (xy 153.67 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a75f30e-c6e0-4105-9e4a-ef38eb992293")
-	)
-	(wire
-		(pts
 			(xy 201.93 110.49) (xy 200.66 110.49)
 		)
 		(stroke
@@ -9935,16 +9865,6 @@
 			(type default)
 		)
 		(uuid "8fab1560-60e5-42bb-9a6c-4e780f9c81ea")
-	)
-	(wire
-		(pts
-			(xy 147.32 71.12) (xy 153.67 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9033c24f-0298-4ef6-84cb-64937e08b4d9")
 	)
 	(wire
 		(pts
@@ -10708,16 +10628,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 68.58) (xy 153.67 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef1a0ea3-c647-40a4-8d48-b35049107b6c")
-	)
-	(wire
-		(pts
 			(xy 180.34 148.59) (xy 187.96 148.59)
 		)
 		(stroke
@@ -10725,16 +10635,6 @@
 			(type default)
 		)
 		(uuid "f14775a8-4b46-4513-8d47-5de662a02ab7")
-	)
-	(wire
-		(pts
-			(xy 147.32 53.34) (xy 153.67 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4507eeb-0f80-425a-bae7-61c64dff3927")
 	)
 	(wire
 		(pts
@@ -16547,99 +16447,6 @@
 	)
 	(symbol
 		(lib_id "Connector:DE9_Receptacle_MountingHoles")
-		(at 161.29 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a176ec9a-debf-4ff4-86a3-6e02aa0d7fdd")
-		(property "Reference" "J7"
-			(at 166.37 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MDM9_Receptacle"
-			(at 166.37 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "9-pin female receptacle socket D-SUB connector, Mounting Hole"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "0"
-			(uuid "9e42b51f-18e2-41a1-bc55-888e8916a212")
-		)
-		(pin "5"
-			(uuid "e472ea09-1a7c-469c-b801-10a973b0d953")
-		)
-		(pin "9"
-			(uuid "61ec693e-65fd-4c18-9ec4-0902aae72039")
-		)
-		(pin "6"
-			(uuid "4930ad1f-02ab-4cec-8b1d-284dfdf78143")
-		)
-		(pin "7"
-			(uuid "5dfcc5d1-7236-4fb6-ba26-bbb25364820c")
-		)
-		(pin "8"
-			(uuid "83807b63-5deb-4613-b2a1-c1b2beca00b0")
-		)
-		(pin "4"
-			(uuid "b182a1bf-9ef7-4c2d-b825-46fcf0e5720f")
-		)
-		(pin "3"
-			(uuid "4dca8e06-eb7c-43b5-b43f-969b0418b500")
-		)
-		(pin "2"
-			(uuid "6e65f253-4ccd-4140-8a14-20654cd9d727")
-		)
-		(pin "1"
-			(uuid "5c71c884-a951-4bc3-b1dc-cad13c0eae90")
-		)
-		(instances
-			(project "MPU"
-				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:DE9_Receptacle_MountingHoles")
 		(at 161.29 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16656,7 +16463,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DE9_Receptacle"
+		(property "Value" "MDM9_Receptacle"
 			(at 166.37 30.4799 0)
 			(effects
 				(font
@@ -16726,71 +16533,6 @@
 			(project ""
 				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9"
 					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 151.13 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c54e9229-326d-42ee-9190-395e98854ec3")
-		(property "Reference" "#PWR011"
-			(at 151.13 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 154.94 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6532da62-ae59-4716-a68c-7201e5277507")
-		)
-		(instances
-			(project "MPU"
-				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -17965,71 +17707,6 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 161.29 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f95aabf1-d434-4828-8c19-9f58ca725a52")
-		(property "Reference" "#PWR0336"
-			(at 161.29 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 165.1 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "16c52a4b-4048-460a-9476-08518b4abf0e")
-		)
-		(instances
-			(project "MPU"
-				(path "/a3d8c1ad-4320-4fce-bd93-27782a1083f9"
-					(reference "#PWR0336")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
 		(at 247.65 49.53)
 		(size 12.7 11.43)
@@ -18518,66 +18195,6 @@
 				(justify left top)
 			)
 		)
-		(pin "DOUT-" input
-			(at 147.32 71.12 0)
-			(uuid "c080e77f-2968-4d26-a4f9-a33deec8a4c1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "DOUT+" input
-			(at 147.32 68.58 0)
-			(uuid "7ef66d93-e481-4b14-bb74-00247a4135fc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SOUT-" input
-			(at 147.32 66.04 0)
-			(uuid "61132829-9ffc-4a10-8eec-9f69e1359d98")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SIN-" input
-			(at 147.32 58.42 0)
-			(uuid "1f6964f5-ac21-46b3-99bd-69124a5cd419")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SIN+" input
-			(at 147.32 55.88 0)
-			(uuid "2e148867-3a31-4f52-861f-09c45f672147")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SOUT+" input
-			(at 147.32 63.5 0)
-			(uuid "d09eb335-f9c7-4c27-8555-5b57ff2b1830")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "RI+" input
 			(at 147.32 24.13 0)
 			(uuid "438595bb-b97e-4403-aacc-b674ce9ea570")
@@ -18611,26 +18228,6 @@
 		(pin "DO+" input
 			(at 147.32 29.21 0)
 			(uuid "dbc78e82-dc77-4ffd-9e02-7d20386c8863")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "DIN-" input
-			(at 147.32 53.34 0)
-			(uuid "a3c98fa1-3143-4e0b-9247-2dd4aa315135")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "DIN+" input
-			(at 147.32 50.8 0)
-			(uuid "751ae101-08bc-4133-b30c-af3bc17e9d36")
 			(effects
 				(font
 					(size 1.27 1.27)
