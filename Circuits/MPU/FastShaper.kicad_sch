@@ -3789,7 +3789,7 @@
 				)
 			)
 		)
-		(property "Value" "200pF"
+		(property "Value" "360pF"
 			(at 190.5 127 90)
 			(effects
 				(font
