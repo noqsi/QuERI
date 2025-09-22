@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "QuERI MPU")
-		(date "2025-09-03")
-		(rev "EM Draft")
+		(date "2025-09-22")
+		(rev "EM Draft for Layout R1")
 		(company "Noqsi Aerospace Ltd")
 		(comment 1 "15 Blanchard Avenue, Billerica MA 01821")
 		(comment 2 "jpd@noqsi.com")
