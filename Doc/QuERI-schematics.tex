@@ -43,9 +43,15 @@ The MPU is organized around an A3PE3000-FG484 ProASIC FPGA. For clarity, this is
 
 The MPU power, control, and signal processing for two Focal Plane Modules (FPMs). It also controls a Modulated X-ray Source (MXS).
 
+Most of the analog circuitry in the MPU uses a 4\ V reference voltage, $VREF$, with a 2\ V "half scale" voltage, $VHS$, used as a virtual ground, allowing it to work from a single 5V supply.
+
 \subsection{Page 1: MPU Top Level}
 
-\begin{table}[htp]\caption{MPU Connectors}\begin{center}\begin{tabular}{|l|l|}\hline
+\begin{table}[htp]
+\caption{MPU Connectors}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
 Connector & Function \\
 \hline
 \hline
@@ -60,7 +66,11 @@ J8 & FPGA programming (JTAG) \\
 J10 & Debugging, no fixed function \\
 J13 & MXS control and monitoring \\
 VP1 & FPGA flash programming voltage \\
-\hline\end{tabular}\end{center}\label{connectors}\end{table}
+\hline
+\end{tabular}
+\end{center}
+\label{connectors}
+\end{table}
 
 \subsection{Page 2: X-ray channel 0}
 
@@ -71,10 +81,24 @@ $U_{6A}$ regulates the current to the detector's thermoelectric cooler via $Q_1$
 $U_5$, $Q_2$, and $Q_3$ are the regulation loop for the detector bias voltage. $U_{5B}$ converts the output voltage range 0 to -160\ V to 0 to 4\ V for housekeeping and regulation. $U_{5A}$ compares that converted voltage to the commanded $HVDAC$ voltage. R34 converts the error voltage out of $U_5A$ to a current. The error current is relayed to the high voltage section of the circuit via $Q_2$. It develops a voltage against $R_{35}$, which feeds the base of pass transistor $Q3$. $R_{36}$ and $C_{14}$ provide the dominant pole stabilizing the loop, along with some noise filtering.
 
 \subsection{Page 3: Fast Shaper}
-The 
-\begin{figure}[htbp]\begin{center}\includegraphics{FastShaping.pdf}\caption{Simulated Fast Shaper outputs for a 54\ mV edge, equivalent to a 10\ keV x-ray. Horizontal axis is time in $\mu$s, vertical is volts. Blue is the $UNIPOLAR$ output, blue is $BIPOLAR$. The edge had a linear 10\ ns rise starting at 1\ $\mu$s.}\label{FastShaping}\end{center}\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics{FastShaping.pdf}
+\caption{Simulated Fast Shaper outputs for a 54\ mV edge, equivalent to a 10\ keV x-ray. Horizontal axis is time in $\mu$s, vertical is volts. Blue is the $UNIPOLAR$ output, blue is $BIPOLAR$. The edge had a linear 10\ ns rise starting at 1\ $\mu$s.}
+\label{FastShaping}
+\end{center}
+\end{figure}
 
 
+The Fast Shaper takes the output steps from the preamplifier and shapes them into pulses. It has a $UNIPOLAR$ pulse output for amplitude measurement, and a $BIPOLAR$ output for timing (Figure \ref{FastShaping}). The zero crossing of the $BIPOLAR$ output nominally occurs at the peak of the $UNIPOLAR$ output.
 
+At the heart of the Fast Shaper is a filter designed to approximate a 5 pole Bessel (nearly constant phase) response. $R_{105}$, $C_{79}$ and $R_{106}$ provide the first pole, along with a transfer function zero to convert the input step into a pulse. The resistance is split to allow $D_{19}$ and $D_{20}$ to clip and protect the input of $U_{20A}$ from overvoltage.
+
+
+$U_{20A}$ provides two more filter poles. $U_{20B}$ buffers and amplifies the signal to set the energy scale. $U_{21}$ provides the last two filter poles along parallel paths, with an additional zero in the $BIPOLAR$ path. the $BIPOLAR$ response is slightly modified to compensate for comparator and logic delays in the Fast Pulse Capture block (Section \ref{FastPulseCapture}).
+
+\subsection{Page 4: Fast Pulse Capture}
+\label{FastPulseCapture}
 
 \end{document}
