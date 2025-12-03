@@ -13,235 +13,7 @@
 		(comment 2 "jpd@noqsi.com")
 	)
 	(lib_symbols
-		(symbol "5-1814400-1_1"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at -1.27 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "5-1814400-1"
-				(at 1.27 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "digikey-footprints:RF_SMA_RightAngle_5-1814400-1"
-				(at 5.08 5.08 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814400&DocType=Customer+Drawing&DocLang=English"
-				(at 5.08 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "CONN SMA JACK R/A 50 OHM PCB"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Digi-Key_PN" "A97593-ND"
-				(at 5.08 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "MPN" "5-1814400-1"
-				(at 5.08 12.7 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Category" "Connectors, Interconnects"
-				(at 5.08 15.24 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Family" "Coaxial Connectors (RF)"
-				(at 5.08 17.78 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "DK_Datasheet_Link" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814400&DocType=Customer+Drawing&DocLang=English"
-				(at 5.08 20.32 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "DK_Detail_Page" "/product-detail/en/te-connectivity-amp-connectors/5-1814400-1/A97593-ND/1755981"
-				(at 5.08 22.86 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "CONN SMA JACK R/A 50 OHM PCB"
-				(at 5.08 25.4 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "TE Connectivity AMP Connectors"
-				(at 5.08 27.94 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Status" "Active"
-				(at 5.08 30.48 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "A97593-ND ZDC, Greenpar"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "5-1814400-1_1_1_1"
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.27 0)
-					(mid -0.2519 1.325)
-					(end 1.27 0.635)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.27 -0.635)
-					(mid -0.2487 -1.3123)
-					(end -1.27 0)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 3.683)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 4.445)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector:DA15_Plug_MountingHoles"
+		(symbol "Connector:DA15_Pins_MountingHoles"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -257,7 +29,7 @@
 					)
 				)
 			)
-			(property "Value" "DA15_Plug_MountingHoles"
+			(property "Value" "DA15_Pins_MountingHoles"
 				(at 0 22.225 0)
 				(effects
 					(font
@@ -283,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "15-pin male plug pin D-SUB connector (low-density/2 columns), Mounting Hole"
+			(property "Description" "15-pin D-SUB connector, pins (male) (low-density/2 columns), Mounting Hole"
 				(at 0 0 0)
 				(effects
 					(font
@@ -292,7 +64,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "male plug D-SUB connector"
+			(property "ki_keywords" "DSUB"
 				(at 0 0 0)
 				(effects
 					(font
@@ -301,7 +73,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DSUB*Male*"
+			(property "ki_fp_filters" "DSUB*Pins*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -310,7 +82,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "DA15_Plug_MountingHoles_0_1"
+			(symbol "DA15_Pins_MountingHoles_0_1"
 				(polyline
 					(pts
 						(xy -3.81 17.78) (xy -2.54 17.78)
@@ -669,7 +441,7 @@
 					)
 				)
 			)
-			(symbol "DA15_Plug_MountingHoles_1_1"
+			(symbol "DA15_Pins_MountingHoles_1_1"
 				(pin passive line
 					(at -7.62 17.78 0)
 					(length 3.81)
@@ -961,7 +733,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:DE9_Plug_MountingHoles"
+		(symbol "Connector:DE9_Pins_MountingHoles"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -977,7 +749,7 @@
 					)
 				)
 			)
-			(property "Value" "DE9_Plug_MountingHoles"
+			(property "Value" "DE9_Pins_MountingHoles"
 				(at 0 14.605 0)
 				(effects
 					(font
@@ -1003,7 +775,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "9-pin male plug pin D-SUB connector, Mounting Hole"
+			(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1012,7 +784,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "connector plug male D-SUB DB9"
+			(property "ki_keywords" "DSUB DB9"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1021,7 +793,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DSUB*Male*"
+			(property "ki_fp_filters" "DSUB*Pins*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1030,7 +802,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "DE9_Plug_MountingHoles_0_1"
+			(symbol "DE9_Pins_MountingHoles_0_1"
 				(polyline
 					(pts
 						(xy -3.81 10.16) (xy -2.54 10.16)
@@ -1251,7 +1023,7 @@
 					)
 				)
 			)
-			(symbol "DE9_Plug_MountingHoles_1_1"
+			(symbol "DE9_Pins_MountingHoles_1_1"
 				(pin passive line
 					(at -7.62 10.16 0)
 					(length 3.81)
@@ -1435,7 +1207,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:DE9_Receptacle_MountingHoles"
+		(symbol "Connector:DE9_Socket_MountingHoles"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1451,7 +1223,7 @@
 					)
 				)
 			)
-			(property "Value" "DE9_Receptacle_MountingHoles"
+			(property "Value" "DE9_Socket_MountingHoles"
 				(at 0 14.605 0)
 				(effects
 					(font
@@ -1477,7 +1249,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "9-pin female receptacle socket D-SUB connector, Mounting Hole"
+			(property "Description" "9-pin D-SUB connector, socket (female), Mounting Hole"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1486,7 +1258,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "connector receptacle female D-SUB DB9"
+			(property "ki_keywords" "DSUB DB9"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1495,7 +1267,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DSUB*Female*"
+			(property "ki_fp_filters" "DSUB*Socket*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1504,7 +1276,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "DE9_Receptacle_MountingHoles_0_1"
+			(symbol "DE9_Socket_MountingHoles_0_1"
 				(polyline
 					(pts
 						(xy -3.81 13.335) (xy -3.81 -13.335) (xy 3.81 -9.525) (xy 3.81 9.525) (xy -3.81 13.335)
@@ -1725,7 +1497,7 @@
 					)
 				)
 			)
-			(symbol "DE9_Receptacle_MountingHoles_1_1"
+			(symbol "DE9_Socket_MountingHoles_1_1"
 				(pin passive line
 					(at -7.62 10.16 0)
 					(length 3.81)
@@ -7994,9 +7766,9 @@
 					)
 				)
 				(arc
-					(start -1.27 0)
-					(mid -0.2519 1.325)
-					(end 1.27 0.635)
+					(start 1.27 -0.635)
+					(mid -0.2751 -1.349)
+					(end -1.27 0)
 					(stroke
 						(width 0)
 						(type solid)
@@ -8006,9 +7778,9 @@
 					)
 				)
 				(arc
-					(start 1.27 -0.635)
-					(mid -0.2487 -1.3123)
-					(end -1.27 0)
+					(start -1.27 0)
+					(mid -0.251 1.3315)
+					(end 1.27 0.635)
 					(stroke
 						(width 0)
 						(type solid)
@@ -11230,7 +11002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "	A3PE3000-FGG484"
+		(property "Description" "A3PE3000-FGG484"
 			(at 83.82 153.67 0)
 			(effects
 				(font
@@ -12149,7 +11921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro-Minature"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
 			(at 88.9 185.42 0)
 			(effects
 				(font
@@ -12432,7 +12204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "	A3PE3000-FGG484"
+		(property "Description" "A3PE3000-FGG484"
 			(at 82.55 85.09 0)
 			(effects
 				(font
@@ -13287,7 +13059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro-Minature"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
 			(at 78.74 185.42 0)
 			(effects
 				(font
@@ -13458,7 +13230,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:DE9_Plug_MountingHoles")
+		(lib_id "Connector:DE9_Pins_MountingHoles")
 		(at 30.48 130.81 0)
 		(mirror y)
 		(unit 1)
@@ -13503,7 +13275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "9-pin male plug pin D-SUB connector, Mounting Hole"
+		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 			(at 30.48 130.81 0)
 			(effects
 				(font
@@ -13664,7 +13436,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "	A3PE3000-FGG484"
+		(property "Description" "A3PE3000-FGG484"
 			(at 172.72 139.7 0)
 			(effects
 				(font
@@ -14492,7 +14264,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:DE9_Plug_MountingHoles")
+		(lib_id "Connector:DE9_Pins_MountingHoles")
 		(at 30.48 54.61 0)
 		(mirror y)
 		(unit 1)
@@ -14537,7 +14309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "9-pin male plug pin D-SUB connector, Mounting Hole"
+		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 			(at 30.48 54.61 0)
 			(effects
 				(font
@@ -14696,7 +14468,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "	A3PE3000-FGG484"
+		(property "Description" "A3PE3000-FGG484"
 			(at 196.85 66.04 0)
 			(effects
 				(font
@@ -15486,7 +15258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro-Minature"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
 			(at 186.69 133.35 0)
 			(effects
 				(font
@@ -15925,7 +15697,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:DA15_Plug_MountingHoles")
+		(lib_id "Connector:DA15_Pins_MountingHoles")
 		(at 165.1 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15969,7 +15741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15-pin male plug pin D-SUB connector (low-density/2 columns), Mounting Hole"
+		(property "Description" "15-pin D-SUB connector, pins (male) (low-density/2 columns), Mounting Hole"
 			(at 165.1 107.95 0)
 			(effects
 				(font
@@ -16446,7 +16218,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:DE9_Receptacle_MountingHoles")
+		(lib_id "Connector:DE9_Socket_MountingHoles")
 		(at 161.29 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16490,7 +16262,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "9-pin female receptacle socket D-SUB connector, Mounting Hole"
+		(property "Description" "9-pin D-SUB connector, socket (female), Mounting Hole"
 			(at 161.29 29.21 0)
 			(effects
 				(font
@@ -16539,7 +16311,6 @@
 		)
 	)
 	(symbol
-		(lib_name "5-1814400-1_1")
 		(lib_id "dk_Coax:5-1814400-1")
 		(at 27.94 33.02 0)
 		(unit 1)
@@ -16748,7 +16519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "	A3PE3000-FGG484"
+		(property "Description" "A3PE3000-FGG484"
 			(at 200.66 92.71 0)
 			(effects
 				(font

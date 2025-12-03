@@ -356,7 +356,7 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -459,10 +459,22 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Library",
+          "name": "Sim.Library",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Name",
+          "name": "Sim.Name",
+          "show": false
         }
       ],
       "filter_string": "",
-      "group_symbols": false,
+      "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,

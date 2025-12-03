@@ -489,7 +489,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "X"
+			(property "Reference" "Y"
 				(at -5.08 6.35 0)
 				(effects
 					(font
@@ -7593,7 +7593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "	A3PE3000-FGG484"
+		(property "Description" "A3PE3000-FGG484"
 			(at 120.65 176.53 0)
 			(effects
 				(font
@@ -9417,7 +9417,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+		(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm"
 			(at 167.64 120.65 0)
 			(effects
 				(font
@@ -9579,7 +9579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "	A3PE3000-FGG484"
+		(property "Description" "A3PE3000-FGG484"
 			(at 167.64 63.5 0)
 			(effects
 				(font
