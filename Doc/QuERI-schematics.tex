@@ -43,9 +43,12 @@ The MPU is organized around an A3PE3000-FG484 ProASIC FPGA. For clarity, this is
 
 The MPU power, control, and signal processing for two Focal Plane Modules (FPMs). It also controls a Modulated X-ray Source (MXS).
 
-Most of the analog circuitry in the MPU uses a 4\ V reference voltage, $VREF$, with a 2\ V "half scale" voltage, $VHS$, used as a virtual ground, allowing it to work from a single 5V supply.
+Most of the analog circuitry in the MPU uses a 4\ V reference voltage, $VFS$, with a 2\ V "half scale" voltage, $VHS$, used as a virtual ground, allowing it to work from a single 5V supply.
 
 \subsection{Page 1: MPU Top Level}
+\label{TopLevel}
+
+Page 1 shows all connectors on the MPU board are along with their connections to subsystems and the FPGA.
 
 \begin{table}[htp]
 \caption{MPU Connectors}
@@ -73,6 +76,7 @@ VP1 & FPGA flash programming voltage \\
 \end{table}
 
 \subsection{Page 2: X-ray channel 0}
+\label{Channel0}
 
 $U_{4A}$ buffers the preamp output to the pulse shapers. $U_{3A}$ senses when the preamplifier output exceeds $VHS$ (2\ V) and signals $FULL$ to logic when it does. $U_{3B}$ when the unipolar output of the slow shaper exceeds the full range of the circuitry ($VFS$, 4\ V) and signals $OVER$ to logic when it does. $U_{4B}$ buffers the 2.5\ V reference.
 
@@ -81,6 +85,7 @@ $U_{6A}$ regulates the current to the detector's thermoelectric cooler via $Q_1$
 $U_5$, $Q_2$, and $Q_3$ are the regulation loop for the detector bias voltage. $U_{5B}$ converts the output voltage range 0 to -160\ V to 0 to 4\ V for housekeeping and regulation. $U_{5A}$ compares that converted voltage to the commanded $HVDAC$ voltage. R34 converts the error voltage out of $U_5A$ to a current. The error current is relayed to the high voltage section of the circuit via $Q_2$. It develops a voltage against $R_{35}$, which feeds the base of pass transistor $Q3$. $R_{36}$ and $C_{14}$ provide the dominant pole stabilizing the loop, along with some noise filtering.
 
 \subsection{Page 3: Fast Shaper}
+\label{FastShaper}
 
 \begin{figure}[htbp]
 \begin{center}
@@ -100,5 +105,58 @@ $U_{20A}$ provides two more filter poles. $U_{20B}$ buffers and amplifies the si
 
 \subsection{Page 4: Fast Pulse Capture}
 \label{FastPulseCapture}
+
+See Figure \ref{FastShaping} for input signals. $U_{30A}$ buffers the unipolar pulse, while $U_{30B}$ inverts it for the differential ADC input. $U_{29B}$ detects when a pulse is above threshold, while $U_{29A}$ detects when the bipolar pulse goes negative, indicating the peak of the unipolar pulse. The FPGA will use this information to initiate an ADC conversion cycle at the appropriate time to capture an x-ray pulse.
+
+\subsection{Pages 5, 6: Slow Shaper and Pulse Capture}
+\label{SlowShaper}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics{SlowShaping.pdf}
+\caption{Simulated Slow Shaper outputs for a 54\ mV edge, equivalent to a 10\ keV x-ray. Horizontal axis is time in $\mu$s, vertical is volts. Blue is the $UNIPOLAR$ output, blue is $BIPOLAR$. The edge had a linear 10\ ns rise starting at 1\ $\mu$s.}
+\label{SlowShaping}
+\end{center}
+\end{figure}
+
+The Slow Shaper is similar to the Fast Shaper, but with larger capacitances, creating a slower pulse (Figure \ref{SlowShaping}). See  Section \ref{FastShaper} for details of shaper operation. Slow Pulse Capture is the same as Fast Pulse Capture: see Section \ref{FastPulseCapture}.
+
+\subsection{Pages 7, 8, 9, 10, 11: X-ray channel 1}
+\label{Channel1}
+
+X-ray channel 1 is similar to channel 0. See Sections \ref{Channel0} through \ref{SlowShaper}.
+
+\subsection{Page 12: Power}
+\label{Power}
+
+External power for the MPU is nominally 28V. Power converters $PS_1$ and $PS_2$ convert this to 3.3V and $\pm$5V for internal use. They isolate internal power, and can accommodate an 18V-36V input range. Inductive input filters block switching noise. If the system design requires it, there are provisions for input capacitors.
+
+The $\overline{PUR}$ circuit provides a power-up reset to the FPGA.
+
+For generating high voltage to provide detector bias, $U_{16}$ makes a 10V p-p AC square wave from the $\pm$5V power. Autotransformer T1 steps that up by a factor of three, driving a six stage Cockroft-Walton ladder, which multiplies and rectifies the AC, producing $\approx$-160V of unregulated low-current power (after losses).
+
+$U_{17}$ is the master voltage (2.5V) reference for analog circuits and linear regulators in the MPU.
+
+$U_{19}$ provides reference voltages $VFS$ (full scale, 4V) and $VHS$ (half scale, 2V) for ADCs and DACs. $VHS$ also serves as virtual ground for the pulse processing circuitry.
+
+$U_{18}$ provides regulated power for the FPGA core and low-voltage logic.
+
+\subsection{Page 13: FPGA Power}
+This page captures FPGA power and ground connections, including bypass capacitors.
+
+\subsection{Page 14: DAC and Housekeeping}
+$U_{11}$ is the DAC that controls MPU operating biases. $U_{12}$ and $U_{13}$ are housekeeping multiplexors. $U_{14}$ buffers the multiplexor output and differentially drives $U_{15}$, the housekeeping ADC.
+
+\subsection{Page 15: Serial interfaces and master clock}
+$X_1$ is the MPU master clock oscillator (50 MHz).
+
+$Q_{13}$, when on, pulls down $\overline{MXINH}$, enabling MXS operation. Resistors $R_{223}$ through $R{235}$ are the level matching and termination resistors for the serial LVDS interface to the MXS.
+
+$U_{40}$ receives the RS422 PPS pulse. $U_2$ implements the RS422 command and telemetry interface.
+
+Pins reserved for a spacewire interface are shown disconnected: they are not used by the QUERI EM MPU.
+
+\subsection{Page 16: LEDs}
+The LEDs have no hardwired function: they are controlled by the FPGA firmware. 
 
 \end{document}
