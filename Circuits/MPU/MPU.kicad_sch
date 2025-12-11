@@ -13257,7 +13257,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MDM-9SCBRP:ITT_MDM-9SCBRP"
 			(at 30.48 130.81 0)
 			(effects
 				(font
@@ -14291,7 +14291,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MDM-9SCBRP:ITT_MDM-9SCBRP"
 			(at 30.48 54.61 0)
 			(effects
 				(font
@@ -15456,7 +15456,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-396_A-41791-0003_1x03_P3.96mm_Vertical"
 			(at 116.84 163.83 0)
 			(effects
 				(font
@@ -15723,7 +15723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MDM-15PCBR:ITT_MDM-15PCBR"
 			(at 165.1 107.95 0)
 			(effects
 				(font
@@ -16244,7 +16244,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MDM-9SCBRP:ITT_MDM-9SCBRP"
 			(at 161.29 29.21 0)
 			(effects
 				(font

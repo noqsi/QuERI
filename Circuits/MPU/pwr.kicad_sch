@@ -22964,7 +22964,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "HPH1-1400L Inductor_SMD:HPH1-1400L"
 			(at 124.46 74.93 90)
 			(effects
 				(font
