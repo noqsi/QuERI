@@ -15474,7 +15474,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-24_W15.24mm_Socket"
+		(property "Footprint" "Power:JCE03-05_DUALOUTPUT"
 			(at 59.69 175.26 0)
 			(effects
 				(font
@@ -24524,7 +24524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-24_W15.24mm_Socket"
+		(property "Footprint" "Power:JCA04-06_SINGLEOUTPUT_XPR"
 			(at 59.69 137.16 0)
 			(effects
 				(font

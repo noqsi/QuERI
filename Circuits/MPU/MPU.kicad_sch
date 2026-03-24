@@ -13,6 +13,233 @@
 		(comment 2 "jpd@noqsi.com")
 	)
 	(lib_symbols
+		(symbol "5-1814400-1_1"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J1"
+				(at -0.0001 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "5-1814400-1"
+				(at -0.0001 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "digikey-footprints:RF_SMA_RightAngle_5-1814400-1"
+				(at 5.08 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814400&DocType=Customer+Drawing&DocLang=English"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "CONN SMA JACK R/A 50 OHM PCB"
+				(at 5.08 25.4 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Digi-Key_PN" "A97593-ND"
+				(at 5.08 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MPN" "5-1814400-1"
+				(at 5.08 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Category" "Connectors, Interconnects"
+				(at 5.08 15.24 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Family" "Coaxial Connectors (RF)"
+				(at 5.08 17.78 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Datasheet_Link" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814400&DocType=Customer+Drawing&DocLang=English"
+				(at 5.08 20.32 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Detail_Page" "/product-detail/en/te-connectivity-amp-connectors/5-1814400-1/A97593-ND/1755981"
+				(at 5.08 22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TE Connectivity AMP Connectors"
+				(at 5.08 27.94 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Status" "Active"
+				(at 5.08 30.48 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "CONN SMA JACK R/A 50 OHM PCB"
+				(at 5.08 25.4 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "A97593-ND ZDC, Greenpar"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "5-1814400-1_1_1_1"
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 -0.635)
+					(mid -0.2751 -1.349)
+					(end -1.27 0)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 0)
+					(mid -0.251 1.3315)
+					(end 1.27 0.635)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 3.683)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 4.445)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:DA15_Pins_MountingHoles"
 			(pin_names
 				(offset 1.016)
@@ -7607,22 +7834,20 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at -1.27 1.27 0)
+			(property "Reference" "J2"
+				(at -0.0006 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Value" "5-1814400-1"
-				(at 1.27 -2.54 0)
+				(at -0.0006 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" "digikey-footprints:RF_SMA_RightAngle_5-1814400-1"
@@ -7646,11 +7871,12 @@
 				)
 			)
 			(property "Description" "CONN SMA JACK R/A 50 OHM PCB"
-				(at 0 0 0)
+				(at 5.08 25.4 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
@@ -7714,16 +7940,6 @@
 					(hide yes)
 				)
 			)
-			(property "Description_1" "CONN SMA JACK R/A 50 OHM PCB"
-				(at 5.08 25.4 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
 			(property "Manufacturer" "TE Connectivity AMP Connectors"
 				(at 5.08 27.94 0)
 				(effects
@@ -7736,6 +7952,16 @@
 			)
 			(property "Status" "Active"
 				(at 5.08 30.48 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "CONN SMA JACK R/A 50 OHM PCB"
+				(at 5.08 25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -7817,7 +8043,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10739,7 +10965,7 @@
 		(fields_autoplaced yes)
 		(uuid "020f7ff8-101f-41bf-b389-59bd2c5a7c43")
 		(property "Reference" "J2"
-			(at 27.9399 102.87 0)
+			(at 27.9394 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,7 +10973,7 @@
 			)
 		)
 		(property "Value" "5-1814400-1"
-			(at 27.9399 105.41 0)
+			(at 27.9394 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10877,7 +11103,7 @@
 		(pin "1"
 			(uuid "d692e5a8-7f56-410e-bd07-2628349af7ee")
 		)
-		(pin "2"
+		(pin "5"
 			(uuid "0e5d5369-ef46-4f3a-af37-6eab8329fd6f")
 		)
 		(instances
@@ -16311,6 +16537,7 @@
 		)
 	)
 	(symbol
+		(lib_name "5-1814400-1_1")
 		(lib_id "dk_Coax:5-1814400-1")
 		(at 27.94 33.02 0)
 		(unit 1)
@@ -16459,7 +16686,7 @@
 		(pin "1"
 			(uuid "3ea6a1bf-91cd-4101-b2e0-eb36023c039c")
 		)
-		(pin "2"
+		(pin "5"
 			(uuid "58e53e97-07e3-43b2-831f-cfb9e8094574")
 		)
 		(instances
